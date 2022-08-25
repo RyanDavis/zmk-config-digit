@@ -90,21 +90,7 @@
                key-positions = <0 1 8>;
                bindings = <&kp LGUI>;
             };
-                //string_sim {
-                //timeout-ms = <60>;
-                //key-positions = <2 4 6>;
-                //layers = <arstneio,vim>;
-                //bindings = <&string_sim>;
-             //};
-    };
 
-     //behaviors {
-             //ZMK_MACRO(string_sim,
-              //wait-ms = <30>;
-              //tap-ms = <35>;
-              //bindings =<&kp S &kp I &kp M &kp U &kp L &kp A &kp T &kp I &kp O &kp N>;
-              //)
-             //};
      keymap {
              compatible = "zmk,keymap";
 
