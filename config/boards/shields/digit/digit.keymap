@@ -90,12 +90,12 @@
                key-positions = <0 1 8>;
                bindings = <&kp LGUI>;
             };
-               string_sim {
-               timeout-ms = <60>;
-               key-positions = <2 4 6>;
-               layers = <arstneio,vim>;
-               bindings = <&string_sim>;
-            };
+                //string_sim {
+                //timeout-ms = <60>;
+                //key-positions = <2 4 6>;
+                //layers = <arstneio,vim>;
+                //bindings = <&string_sim>;
+             //};
     };
 
     behaviors {
