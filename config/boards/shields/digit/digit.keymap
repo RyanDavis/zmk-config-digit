@@ -53,7 +53,7 @@
              combo_ent {
                 timeout-ms = <30>;
                 key-positions = <8 9>;
-                bindings = <&mt ENT ESC>;
+                bindings = <&mt ENTER ESC>;
             };
              combo_alt {
                timeout-ms = <30>;
