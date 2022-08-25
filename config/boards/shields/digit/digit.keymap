@@ -5,11 +5,11 @@
 &lt {
     tapping-term-ms = <150>;
     quick-tap-ms = <100>;
-    flavor = hold-preferred;
+    flavor = "hold-preferred"i;
     };
 &mt {
     tapping-term-ms = <150>;
-    flavor = hold-preferred;
+    flavor = "hold-preferred";
     };
 &sk {
     release-after-ms = <10000>;
