@@ -51,11 +51,11 @@
                bindings = <&to blt>;
             };
             
-            combo_ent {
-               timeout-ms = <30>;
-               key-positions = <8 9>;
-               bindings = <&mt ENT ESC>;
-            };
+             //combo_ent {
+                //timeout-ms = <30>;
+                //key-positions = <8 9>;
+                //bindings = <&mt ENT ESC>;
+           // };
              combo_alt {
                timeout-ms = <30>;
                key-positions = <0 3 8>;
