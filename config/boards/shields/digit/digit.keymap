@@ -9,10 +9,7 @@
              arstneio {
              bindings = < 
              &kp A &kp R &kp S  &kp T  &kp N &kp E  &kp I  &kp O
-<<<<<<< HEAD
-                                &kp SPACE &kp ENTER
-=======
->>>>>>> dccfdb2e396658ce23996886ca4f4303089b8666
+                                &kp SPACE &kp LSHIFT
              >;
                      };
             };
