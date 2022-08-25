@@ -98,14 +98,14 @@
              //};
     };
 
-    behaviors {
-            ZMK_MACRO(string_sim,
-             wait-ms = <30>;
-             tap-ms = <35>;
-             bindings =<&kp S &kp I &kp M &kp U &kp L &kp A &kp T &kp I &kp O &kp N>;
-             )
-            };
-    keymap {
+     //behaviors {
+             //ZMK_MACRO(string_sim,
+              //wait-ms = <30>;
+              //tap-ms = <35>;
+              //bindings =<&kp S &kp I &kp M &kp U &kp L &kp A &kp T &kp I &kp O &kp N>;
+              //)
+             //};
+     keymap {
              compatible = "zmk,keymap";
 
              arstneio {
