@@ -18,3 +18,4 @@ config ZMK_KEYBOARD_NAME
     default "The Digit"
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+endif
