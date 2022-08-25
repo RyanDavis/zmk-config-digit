@@ -27,73 +27,73 @@
             compatible ="zmk,combos";
             combo_num {
                timeout-ms = <30>;
-               key-positions = <0 1 2 3>
+               key-positions = <0 1 2 3>;
                bindings = <&to num>;
             };
             combo_nav {
                timeout-ms = <30>;
-               key-positions = <4 5 6 7>
+               key-positions = <4 5 6 7>;
                bindings = <&to nav>;
             };
             combo_vim {
                timeout-ms = <30>;
-               key-positions = <3 5 6 >
+               key-positions = <3 5 6 >;
                bindings = <&to vim>;
             };
             combo_media {
                timeout-ms = <30>;
-               key-positions = <0 1 2 3 4 5 6 7 8 9 0>
+               key-positions = <0 1 2 3 4 5 6 7 8 9 0>;
                bindings = <&to media>;
             };
                combo_blt {
                timeout-ms = <30>;
-               key-positions = <3 4 8 9>
+               key-positions = <3 4 8 9>;
                bindings = <&to blt>;
             };
             
             combo_ent {
                timeout-ms = <30>;
-               key-positions = <8 9>
+               key-positions = <8 9>;
                bindings = <&mt ENT ESC>;
             };
              combo_alt {
                timeout-ms = <30>;
-               key-positions = <0 3 8>
+               key-positions = <0 3 8>;
                bindings = <&kt LALT>;
             };
              combo_back {
                timeout-ms = <30>;
-               key-positions = <0 7>
+               key-positions = <0 7>;
                bindings = <&kp BSPC>;
             };
               combo_rst {
                timeout-ms = <30>;
-               key-positions = <0 1 2 3 4 5 6  7>
+               key-positions = <0 1 2 3 4 5 6  7>;
                bindings = <&reset>;
             };
               combo_bsword {
                timeout-ms = <30>;
-               key-positions = <0 7 9>
+               key-positions = <0 7 9>;
                bindings = <&kp LC(BSPC)>;
             };
             combo_ctrl {
                timeout-ms = <30>;
-               key-positions = <1 3 8>
+               key-positions = <1 3 8>;
                bindings = <&kt LCTRL>;
             };
                combo_tab {
                timeout-ms = <30>;
-               key-positions = <2 3 8>
+               key-positions = <2 3 8>;
                bindings = <&kp TAB>;
             };
                combo_win {
                timeout-ms = <30>;
-               key-positions = <0 1 8>
+               key-positions = <0 1 8>;
                bindings = <&kp LGUI>;
             };
                string_sim {
                timeout-ms = <60>;
-               key-positions = <2 4 6>
+               key-positions = <2 4 6>;
                layers = <arstneio, vim>;
                bindings = <&string_sim>;
             };
