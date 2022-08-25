@@ -49,8 +49,7 @@
                timeout-ms = <30>;
                key-positions = <3 4 8 9>;
                bindings = <&to blt>;
-            };
-            
+            };    
              combo_ent {
                 timeout-ms = <30>;
                 key-positions = <8 9>;
