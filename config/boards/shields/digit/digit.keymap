@@ -37,7 +37,7 @@
             };
             combo_vim {
                timeout-ms = <30>;
-               key-positions = <3 5 6 >;
+               key-positions = <3 5 6>;
                bindings = <&to vim>;
             };
             combo_media {
@@ -51,11 +51,11 @@
                bindings = <&to blt>;
             };
             
-             //combo_ent {
-                //timeout-ms = <30>;
-                //key-positions = <8 9>;
-                //bindings = <&mt ENT ESC>;
-           // };
+             combo_ent {
+                timeout-ms = <30>;
+                key-positions = <8 9>;
+                bindings = <&mt ENT ESC>;
+            };
              combo_alt {
                timeout-ms = <30>;
                key-positions = <0 3 8>;
@@ -94,7 +94,7 @@
                string_sim {
                timeout-ms = <60>;
                key-positions = <2 4 6>;
-               layers = <arstneio, vim>;
+               layers = <arstneio,vim>;
                bindings = <&string_sim>;
             };
     };
