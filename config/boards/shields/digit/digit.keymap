@@ -99,7 +99,7 @@
               bindings =<&kp S &kp I &kp M &kp U &kp L &kp A &kp T &kp I &kp O &kp N>;
               )
              };
-     keymap {
+     keymap { 
              compatible = "zmk,keymap";
 
              arstneio {
@@ -124,6 +124,7 @@
             bindings = <
             &none &none &none &none &kp C_PREV &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp C_NEXT
                               &none &none
+            };
             >;
             blt {
             bindings = <
@@ -131,5 +132,5 @@
                               &none &none
             >;
             };
-            };
-     };   
+     };
+     };
