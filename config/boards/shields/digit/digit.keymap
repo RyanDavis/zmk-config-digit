@@ -131,7 +131,7 @@
             COMBO(ll, &kp L, 4 7)
             COMBO(exc, &kp EXCL, 5 7)
             COMBO(slash, &kp SLASH, 2 4 7)
-            COMBO(bslash, &kp BSLSH, 2 4 7 8)
+            COMBO(bslash, &kp BSLH, 2 4 7 8)
             COMBO(home, &kp HOME, 4 9)
             COMBO(end, &kp END, 7 9)
             COMBO(ribr, &kp RBKT, 1 7 8)
