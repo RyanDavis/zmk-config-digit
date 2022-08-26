@@ -173,7 +173,9 @@
             vim {
             bindings = <
             &none &none &none &none &mt N H &mt E K &mt I J &mt O L
-                               &trans &trans}
+                               &trans &trans
+            >;
+            };
             media {
             bindings = <
             &none &none &none &none &kp C_PREV &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp C_NEXT
