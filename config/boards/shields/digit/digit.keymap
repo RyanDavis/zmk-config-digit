@@ -102,7 +102,7 @@
                layers = <arstneio vim>;
                bindings = <&string_sim>;
             };
-            COMBOL(dot, &kp DOT,all, 1 7)
+            COMBOL(dt, &kp DOT,arstneio vim, 1 7)
             COMBOL(scln, &kp COLON,all, 6 7)
             COMBOL(ww, &kp W,arstneio vim, 0 1)
             COMBOL(xx, &kp X,arstneio vim, 0 2)
