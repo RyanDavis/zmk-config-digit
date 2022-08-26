@@ -125,7 +125,7 @@
             COMBOL(nten, &mt F10 N0,media, 3 5)
             COMBOL(gg, &kp G,arstneio vim, 3 6)
             COMBOL(quest, &mt EQUAL QMARK,, 3 7)
-            COMBOL(hh, &mt NON_US_HASH H,colemak vim, 4 5)
+            COMBOL(hh, &mt NON_US_HASH H,arstneio vim, 4 5)
             COMBOL(yy, &kp Y,arstneio vim, 4 6)
             COMBOL(ll, &kp L,arstneio vim, 4 7)
             COMBOL(exc, &kp EXCL,arstneio vim num, 5 7)
@@ -139,6 +139,7 @@
             COMBOL(mute, &kp C_MUTE, media, 2 4)
 
     };
+
 
      behaviors {
              ZMK_MACRO(string_sim,
