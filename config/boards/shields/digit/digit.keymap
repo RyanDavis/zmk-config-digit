@@ -178,7 +178,7 @@
             COMBOL(string_first, &string_first,arstneio, 1 2 6)
             COMBOL(string_this, &string_this,arstneio, 2 3 4 5 8)
             COMBO(combo_ctrlC, &kp LC(C), 2 8)
-            COMBO(combo_ctrlV, &kp LC(v), 3 8)
+            COMBO(combo_ctrlV, &kp LC(V), 3 8)
             COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
     };
 
