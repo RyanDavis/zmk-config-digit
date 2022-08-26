@@ -18,33 +18,33 @@
 #define arstneio 0
 #define num 1
 #define nav 2
-#define media 4 
-#define blt 5
+#define media 3 
+#define blt 4
 / {
     combos {
             compatible ="zmk,combos";
             combo_num {
                timeout-ms = <100>;
                key-positions = <0 1 2 3>;
-               layers = <arstneio nav media blt>
+               layers = <arstneio nav media blt>;
                bindings = <&to num>;
             };
             combo_nav {
                timeout-ms = <100>;
                key-positions = <4 5 6 7>;
-               layers = <arstneio num media blt>
+               layers = <arstneio num media blt>;
                bindings = <&to nav>;
             };
             combo_media {
                timeout-ms = <100>;
                key-positions = <0 1 2 3 4 5 6 7 8 9 0>;
-               layers = <arstneio nav num blt>
+               layers = <arstneio nav num blt>;
                bindings = <&to media>;
             };
                combo_blt {
                timeout-ms = <100>;
                key-positions = <3 4 8 9>;
-               layers = <arstneio nav media num>
+               layers = <arstneio nav media num>;
                bindings = <&to blt>;
             };    
              combo_ent {
