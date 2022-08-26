@@ -103,7 +103,7 @@
                bindings = <&string_sim>;
             };
             COMBOL(dt, &kp DOT,arstneio vim, 1 7)
-            COMBOL(scln, &kp COLON,all, 6 7)
+            COMBOL(scln, &kp COLON,, 6 7)
             COMBOL(ww, &kp W,arstneio vim, 0 1)
             COMBOL(xx, &kp X,arstneio vim, 0 2)
             COMBOL(pp, &kp P,arstneio vim, 0 3)
