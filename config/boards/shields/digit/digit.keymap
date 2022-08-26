@@ -15,7 +15,6 @@
     release-after-ms = <10000>;
     quick-release;
     };
-#define  -1
 #define arstneio 0
 #define num 1
 #define nav 2
