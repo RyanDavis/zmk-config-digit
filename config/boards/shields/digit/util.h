@@ -4,10 +4,10 @@ combo_##name { \
   bindings = <keypress>; \
   key-positions = <keypos>; \
 };
-#define COMBOL(name, keypress, layers, keypos) \
+#define COMBOL(name, keypress, mylayers, keypos) \
 combo_##name { \
   timeout-ms = <30>; \
   bindings = <keypress>; \
-  layers = <layers>; \
+  layers = <mylayers>; \
   key-positions = <keypos>; \
 };
