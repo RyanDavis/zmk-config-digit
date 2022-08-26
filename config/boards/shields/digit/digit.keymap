@@ -166,7 +166,7 @@
             };
             nav {
             bindings = <
-            &none &none &none &none &kp LEFT &kp UP &kp DOWN &kp RIGHT
+            &string_sim &none &none &none &kp LEFT &kp UP &kp DOWN &kp RIGHT
                                &trans &trans
             >;
             };
