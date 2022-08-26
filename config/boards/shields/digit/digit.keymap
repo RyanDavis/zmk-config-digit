@@ -97,16 +97,16 @@
             };
                
                string_sim {
-               timeout-ms = <60>;
+               timeout-ms = <20>;
                key-positions = <2 4 6>;
-               layers = <arstneio,vim>;
+               layers = <arstneio vim>;
                bindings = <&string_sim>;
             };
             COMBO(dot, &kp DOT, 1 7)
             COMBO(scln, &kp COLON, 6 7)
             COMBO(ww, &kp W, 0 1)
             COMBO(xx, &kp X, 0 2)
-            COMBOL(pp, &kp P,colemak, 0 3)
+            COMBOL(pp, &kp P,arstneio, 0 3)
             COMBO(jj, &kp J, 0 4)
             COMBO(qq, &kp Q, 0 5)
             COMBO(lbrac, &kp LPAR, 0 6)
@@ -119,10 +119,10 @@
             COMBO(mm, &kp M, 2 4)
             COMBO(minus, &kp MINUS, 2 6)
             COMBO(apos, &kp APOS, 2 7)
-            COMBOL(bb, &mt N9 B,colemak, 3 4)
+            COMBOL(bb, &mt N9 B,arstneio, 3 4)
 
             COMBOL(bb, &mt F9 N9,num, 3 4)
-            COMBOL(vv, &mt N0 V,colemak, 3 5)
+            COMBOL(vv, &mt N0 V,arstneio, 3 5)
             COMBOL(vv, &mt F10 N0,media, 3 5)
             COMBO(gg, &kp G, 3 6)
             COMBO(quest, &mt EQUAL QMARK, 3 7)
