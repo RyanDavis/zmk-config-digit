@@ -9,7 +9,7 @@
     };
 &mt {
     tapping-term-ms = <150>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     };
 &sk {
     release-after-ms = <10000>;
