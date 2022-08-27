@@ -80,7 +80,7 @@
              combo_alt {
                timeout-ms = <100>;
                key-positions = <0 3 8>;
-               bindings = <&sk LALT>;
+               bindings = <&ta>;
             };
              combo_back {
                timeout-ms = <100>;
@@ -100,7 +100,7 @@
             combo_ctrl {
                timeout-ms = <100>;
                key-positions = <1 3 8>;
-               bindings = <&sk LCTRL>;
+               bindings = <&htct>;
             };
                combo_tab {
                timeout-ms = <100>;
@@ -215,6 +215,22 @@
             #binding-cells = <0>;
             tapping-term-ms = <800>;
             bindings = <&sk LSHIFT>, <&kt LSHIFT>, <&mo num>;
+        };
+
+             ta: altog {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <800>;
+            bindings = <&sk LALT>, <&kt LALT>;
+        };
+
+             htct: torhctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <800>;
+            bindings = <&sk LCTRL>, <&kt LCTRL>;
         };
              ZMK_MACRO(string_sim,
               wait-ms = <10>;
