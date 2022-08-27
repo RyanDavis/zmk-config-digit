@@ -3,9 +3,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include "util.h"
 &lt {
-    tapping-term-ms = <150>;
-    quick-tap-ms = <100>;
-    flavor = "hold-preferred";
+    tapping-term-ms = <100>;
+    quick-tap-ms = <300>;
+    flavor = "balanced";
+    retro-tap;
     };
 &mt {
     tapping-term-ms = <150>;
@@ -128,7 +129,7 @@
             COMBOL(hh, &mt NON_US_HASH H,arstneio , 4 5)
             COMBOL(yy, &kp Y,arstneio , 4 6)
             COMBOL(ll, &kp L,arstneio , 4 7)
-            COMBOL(uu, &kp U,arstneio , 4 7)
+            COMBOL(uu, &kp U,arstneio , 5 6)
             COMBOL(exc, &kp EXCL,arstneio num, 5 7)
             COMBOL(slash, &kp SLASH,arstneio num, 2 4 7)
             COMBOL(bslash, &kp BSLH,arstneio num, 2 4 7 8)
