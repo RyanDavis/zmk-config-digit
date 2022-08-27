@@ -98,7 +98,7 @@
                bindings = <&kp LC(BSPC)>;
             };
             combo_ctrl {
-               timeout-ms = <-1>;
+               //timeout-ms = <800>;
                key-positions = <1 3 8>;
                bindings = <&htct>;
             };
