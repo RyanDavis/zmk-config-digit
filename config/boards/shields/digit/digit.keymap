@@ -101,7 +101,7 @@
                bindings = <&string_sim>;
             };
             COMBOL(dt, &kp DOT,arstneio, 1 6)
-            COMBOL(scln, &kp COLON,arstneio nav num, 6 7)
+            COMBOL(cln, &kp SEMICOLON,arstneio nav num, 6 7)
             COMBOL(ww, &kp W,arstneio , 0 1)
             COMBOL(xx, &kp X,arstneio , 0 2)
             COMBOL(pp, &kp P,arstneio , 0 3)
@@ -195,8 +195,8 @@
               wait-ms = <10>;
               tap-ms = <5>;
               bindings =<&kp W>
-              //, <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <macro_tap &kp H &kp A &kp T>;
+              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
+              ;//, <macro_tap &kp H &kp A &kp T>;
               )
               ZMK_MACRO(string_had,
               wait-ms = <10>;
