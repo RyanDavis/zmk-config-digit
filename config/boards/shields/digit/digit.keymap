@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include "util.h"
 &lt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <50>;
     quick-tap-ms = <150>;
     flavor = "balanced";
     retro-tap;
@@ -80,7 +80,7 @@
              combo_alt {
                timeout-ms = <800>;
                key-positions = <0 3 8>;
-               bindings = <&ta>;
+               bindings = <&sc>;
             };
              combo_back {
                timeout-ms = <100>;
