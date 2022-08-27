@@ -9,7 +9,7 @@
     retro-tap;
     };
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <100>;
     flavor = "tap-preferred";
     };
 &sk {
@@ -46,7 +46,7 @@
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <800>;
-            bindings = <&sk LCTRL>, <&kp A>;
+            bindings = <&sk LCTRL>, <&kt LCTRL>;
         };
              ZMK_MACRO(string_sim,
               wait-ms = <10>;
@@ -364,7 +364,7 @@
             };
             nav {
             bindings = <
-            &string_sim &none &none &none &kp LEFT &kp UP &kp DOWN &kp RIGHT
+            &none &none &none &none &kp LEFT &kp UP &kp DOWN &kp RIGHT
                                &trans &trans
             >;
             };
@@ -462,24 +462,36 @@
                key-positions = <1 3 8>;
                bindings = <&htct>;
             };
-               combo_tab {
+            combo_lctrl {
+               timeout-ms = <100>;
+               key-positions =<1 3>;
+               layers =<nav>;
+               bindings = <&kt LCTRL>;
+            };
+            combo_lalt {
+               timeout-ms = <100>;
+               key-positions = <0 3>;
+               layers = <nav>;
+               bindings = <&kt LALT>;
+            };
+            combo_tab {
                timeout-ms = <100>;
                key-positions = <2 3 8>;
                bindings = <&kp TAB>;
             };
-               combo_win {
+            combo_win {
                timeout-ms = <100>;
                key-positions = <0 1 8>;
                bindings = <&kp LGUI>;
             };
-               combo_comma {
+            combo_comma {
                timeout-ms = <100>;
                key-positions = <2 5>;
                layers = <num arstneio>;
                bindings = <&kp COMMA>;
             };
                
-               string_sim {
+            string_sim {
                timeout-ms = <200>;
                key-positions = <2 4 6>;
                layers = <arstneio>;
