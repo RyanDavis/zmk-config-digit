@@ -30,24 +30,48 @@
                layers = <arstneio nav media blt>;
                bindings = <&to num>;
             };
+            comb_numarst {
+               timeout-ms = <100>;
+               key-positions = <0 1 2 3>;
+               layers = <num>;
+               bindings = <&to arstneio>;
+            };
             combo_nav {
                timeout-ms = <100>;
                key-positions = <4 5 6 7>;
                layers = <arstneio num media blt>;
                bindings = <&to nav>;
             };
+            combo_navarst {
+                timeout-ms = <100>;
+                key-positions = <4 5 6 7>;
+                layers = <nav>;
+                bindings = <&to arstneio>;
+            };
             combo_media {
                timeout-ms = <100>;
-               key-positions = <0 1 2 3 4 5 6 7 8 9 0>;
+               key-positions = <0 1 2 3 4 5 6 7 8 9>;
                layers = <arstneio nav num blt>;
                bindings = <&to media>;
             };
-               combo_blt {
+            combo_mediaarst {
+                timeout-ms = <100>;
+                key-positions = <0 1 2 3 4 5 6 7 8 9};
+                layers = <media>;
+                bindings = <&to arstneio>;
+            };
+            combo_blt {
                timeout-ms = <100>;
                key-positions = <3 4 8 9>;
                layers = <arstneio nav media num>;
                bindings = <&to blt>;
-            };    
+            };
+            combo_bltarst {
+               timeout-ms = <100>;
+               key-positions = <3 4 8 9>;
+               layers = <blt>;
+               bindings = <&to arstneio>;
+               };
              combo_ent {
                 timeout-ms = <100>;
                 key-positions = <8 9>;
@@ -189,7 +213,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <800>;
             bindings = <&sk LSHIFT>, <&kt LSHIFT>, <&mo num>;
         };
              ZMK_MACRO(string_sim,
@@ -496,7 +520,7 @@
 
              arstneio {
              bindings = < 
-             &mt N1 A &mt N2 R &mt N3 S  &mt N4 T  &mt N5 N &mt N6 E  &mt N6 I  &mt N8 O
+             &mt N1 A &mt N2 R &mt N3 S  &mt N4 T  &mt N5 N &mt N6 E  &mt N7 I  &mt N8 O
                                 &lt nav SPACE &sc 
              >;
              };
