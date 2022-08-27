@@ -188,7 +188,7 @@
               wait-ms = <10>;
               tap-ms = <5>;
               bindings =<&kp S>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
+              //, <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
               , <macro_tap &kp I &kp M &kp U &kp L &kp A &kp T &kp I &kp O &kp N>;
               )
              ZMK_MACRO(string_what,
