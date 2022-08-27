@@ -142,7 +142,7 @@
             COMBOL(string_there, &string_there,arstneio, 1 3 4 5)
             COMBOL(string_and, &string_and,arstneio, 0 3 4)
             COMBOL(string_you, &string_you,arstneio, 4 5 6)
-           //COMBOL(string_vim, &string_vim,arstneio, 3 5 6)
+            COMBOL(string_vim, &string_vim,arstneio, 3 5 6)
             COMBOL(string_ing, &string_ing,arstneio, 3 4 6)
             COMBOL(string_for, &string_for,arstneio num, 1 2 7)
             COMBOL(string_ion, &string_ion,arstneio, 4 6 7)
@@ -233,13 +233,13 @@
               , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
               , <&macro_tap &kp O &kp U>;
               )
-             // ZMK_MACRO(string_vim,
-             // wait-ms = <10>;
-             // tap-ms = <5>;
-             //  bindings =<&kp V>
-             //  , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-             // , <&macro_tap &kp  &kp E>;
-             //  )
+             ZMK_MACRO(string_vim,
+              wait-ms = <10>;
+              tap-ms = <5>;
+              bindings =<&kp V>
+              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
+              , <&macro_tap &kp I &kp M>;
+              )
              ZMK_MACRO(string_and,
               wait-ms = <10>;
               tap-ms = <5>;
@@ -299,7 +299,7 @@
               tap-ms = <5>;
               bindings =<&kp J>
               , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp U &kp &kp S &kp T &kp E  &kp R>;
+              , <&macro_tap &kp U &kp S &kp T>;
               )
              ZMK_MACRO(string_ight,
               wait-ms = <10>;
