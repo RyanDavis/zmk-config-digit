@@ -4,7 +4,7 @@
 #include "util.h"
 &lt {
     tapping-term-ms = <100>;
-    quick-tap-ms = <300>;
+    quick-tap-ms = <150>;
     flavor = "balanced";
     retro-tap;
     };
@@ -230,7 +230,7 @@
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <800>;
-            bindings = <&sk LCTRL>, <&kt LCTRL>;
+            bindings = <&sk LCTRL>, <&kp A>;
         };
              ZMK_MACRO(string_sim,
               wait-ms = <10>;
