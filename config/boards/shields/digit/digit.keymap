@@ -22,190 +22,6 @@
 #define media 3 
 #define blt 4
 / {
-    combos {
-            compatible ="zmk,combos";
-            combo_num {
-               timeout-ms = <100>;
-               key-positions = <0 1 2 3>;
-               layers = <arstneio nav media blt>;
-               bindings = <&to num>;
-            };
-            comb_numarst {
-               timeout-ms = <100>;
-               key-positions = <0 1 2 3>;
-               layers = <num>;
-               bindings = <&to arstneio>;
-            };
-            combo_nav {
-               timeout-ms = <100>;
-               key-positions = <4 5 6 7>;
-               layers = <arstneio num media blt>;
-               bindings = <&to nav>;
-            };
-            combo_navarst {
-                timeout-ms = <100>;
-                key-positions = <4 5 6 7>;
-                layers = <nav>;
-                bindings = <&to arstneio>;
-            };
-            combo_media {
-               timeout-ms = <100>;
-               key-positions = <0 1 2 3 4 5 6 7 8 9>;
-               layers = <arstneio nav num blt>;
-               bindings = <&to media>;
-            };
-            combo_mediaarst {
-                timeout-ms = <100>;
-                key-positions = <0 1 2 3 4 5 6 7 8 9>;
-                layers = <media>;
-                bindings = <&to arstneio>;
-            };
-            combo_blt {
-               timeout-ms = <100>;
-               key-positions = <3 4 8 9>;
-               layers = <arstneio nav media num>;
-               bindings = <&to blt>;
-            };
-            combo_bltarst {
-               timeout-ms = <100>;
-               key-positions = <3 4 8 9>;
-               layers = <blt>;
-               bindings = <&to arstneio>;
-               };
-             combo_ent {
-                timeout-ms = <100>;
-                key-positions = <8 9>;
-                bindings = <&mt ESC ENTER>;
-            };
-             combo_alt {
-               timeout-ms = <800>;
-               key-positions = <0 3 8>;
-               bindings = <&ta>;
-            };
-             combo_back {
-               timeout-ms = <100>;
-               key-positions = <0 7>;
-               bindings = <&kp BSPC>;
-            };
-              combo_rst {
-               timeout-ms = <100>;
-               key-positions = <0 1 2 3 4 5 6  7>;
-               bindings = <&reset>;
-            };
-              combo_bsword {
-               timeout-ms = <100>;
-               key-positions = <0 7 9>;
-               bindings = <&kp LC(BSPC)>;
-            };
-            combo_ctrl {
-               //timeout-ms = <800>;
-               key-positions = <1 3 8>;
-               bindings = <&htct>;
-            };
-               combo_tab {
-               timeout-ms = <100>;
-               key-positions = <2 3 8>;
-               bindings = <&kp TAB>;
-            };
-               combo_win {
-               timeout-ms = <100>;
-               key-positions = <0 1 8>;
-               bindings = <&kp LGUI>;
-            };
-               combo_comma {
-               timeout-ms = <100>;
-               key-positions = <2 5>;
-               layers = <num arstneio>;
-               bindings = <&kp COMMA>;
-            };
-               
-               string_sim {
-               timeout-ms = <200>;
-               key-positions = <2 4 6>;
-               layers = <arstneio>;
-               bindings = <&string_sim>;
-            };
-            COMBOL(dt, &kp DOT,arstneio, 1 6)
-            COMBOL(cln, &kp SEMICOLON,arstneio nav num, 6 7)
-            COMBOL(ww, &kp W,arstneio , 0 1)
-            COMBOL(xx, &kp X,arstneio , 0 2)
-            COMBOL(pp, &kp P,arstneio , 0 3)
-            COMBOL(jj, &kp J,arstneio , 0 4)
-            COMBOL(qq, &kp Q,arstneio , 0 5)
-            COMBOL(lbrac, &kp LPAR,arstneio nav num, 0 6)
-            COMBOL(ff, &kp F,arstneio , 1 2)
-            COMBOL(cc, &kp C,arstneio , 1 3)
-            COMBOL(kk, &kp K,arstneio , 1 4)
-            COMBOL(zz, &kp Z,arstneio , 1 5)
-            COMBOL(rbrac, &kp RPAR,arstneio nav num, 1 7)
-            COMBOL(dd, &kp D,arstneio , 2 3)
-            COMBOL(mm, &kp M,arstneio , 2 4)
-            COMBOL(minus, &kp MINUS,arstneio nav num, 2 6)
-            COMBOL(apos, &kp APOS,arstneio nav num, 2 7)
-            COMBOL(bb, &mt N9 B,arstneio , 3 4)
-            COMBOL(gesc, &gresc,nav ,2 5)
-
-            COMBOL(nu9, &mt F9 N9,num, 3 4)
-            COMBOL(vv, &mt N0 V,arstneio , 3 5)
-            COMBOL(nten, &mt F10 N0,media, 3 5)
-            COMBOL(gg, &kp G,arstneio, 3 6)
-            COMBOL(quest, &mt EQUAL QMARK,arstneio nav num, 3 7)
-            COMBOL(hh, &mt NON_US_HASH H,arstneio , 4 5)
-            COMBOL(yy, &kp Y,arstneio , 4 6)
-            COMBOL(ll, &kp L,arstneio , 4 7)
-            COMBOL(uu, &kp U,arstneio , 5 6)
-            COMBOL(exc, &kp EXCL,arstneio num, 5 7)
-            COMBOL(slash, &kp SLASH,arstneio num, 2 4 7)
-            COMBOL(bslash, &kp BSLH,arstneio num, 2 4 7 8)
-            COMBOL(home, &kp HOME,arstneio nav num, 4 9)
-            COMBOL(end, &kp END,arstneio nav num, 7 9)
-            COMBOL(ribr, &kp RBKT,arstneio nav num, 1 7 8)
-            COMBOL(lebr, &kp LBKT,arstneio nav num, 0 6 8)
-            COMBOL(play, &kp C_PLAY, media, 0 3)
-            COMBOL(mute, &kp C_MUTE, media, 2 4)
-            COMBOL(string_the, &string_the,arstneio, 3 4 5)
-            COMBOL(string_there, &string_there,arstneio, 1 3 4 5)
-            COMBOL(string_and, &string_and,arstneio, 0 3 4)
-            COMBOL(string_you, &string_you,arstneio, 4 5 6)
-            COMBOL(string_vim, &string_vim,arstneio, 3 5 6)
-            COMBOL(string_ing, &string_ing,arstneio, 3 4 6)
-            COMBOL(string_for, &string_for,arstneio num, 1 2 7)
-            COMBOL(string_ion, &string_ion,arstneio, 4 6 7)
-            COMBOL(string_star, &string_star,arstneio, 1 2 3)
-            COMBOL(string_cluster, &string_cluster,arstneio, 1 3 4 7)
-            COMBOL(string_while, &string_while,arstneio, 0 1 4 5)
-            COMBOL(string_ight, &string_ight,arstneio, 3 4 5 6)
-            COMBOL(string_particle, &string_particle,arstneio, 0 1 3 4 7)
-            COMBOL(string_ould, &string_ould,arstneio, 5 6 7)
-            COMBOL(string_ough, &string_ough,arstneio, 1 2 5 6)
-            COMBOL(string_hydrodynamics, &string_hydrodynamics ,arstneio, 2 3 4 5 9)
-            COMBOL(string_interest, &string_interest,arstneio, 4 5 6 9)
-            COMBOL(string_function, &string_function,arstneio, 1 2 5 6 9)
-            COMBOL(string_have, &string_have,arstneio, 0 3 5)
-            COMBOL(string_that, &string_that,arstneio, 0 3 4 5)
-            COMBOL(string_with, &string_with,arstneio, 0 1 6)
-            COMBOL(string_what, &string_what,arstneio, 0 1 3 7)
-            COMBOL(string_who, &string_who,arstneio, 0 1 7)
-            COMBOL(string_which, &string_which,arstneio, 0 1 3)
-            COMBOL(string_make, &string_make,arstneio, 0 1 2 4)
-            COMBOL(string_real, &string_real,arstneio, 1 4 7)
-            COMBOL(string_take, &string_take,arstneio, 0 1 3 4)
-            COMBOL(string_good, &string_good,arstneio, 2 3 6 7)
-            COMBOL(string_done, &string_done,arstneio, 2 3 4 7)
-            COMBOL(string_ound, &string_ound,arstneio, 2 3 5 6 7)
-            COMBOL(string_ause, &string_ause,arstneio, 0 2 5 6)
-            COMBOL(string_had, &string_had,arstneio, 2 3 4 5)
-            COMBOL(string_print, &string_print,arstneio, 0 1 3 6)
-            COMBOL(string_wq, &string_wq,arstneio nav num, 0 1 5)
-            COMBOL(string_particle, &string_particle,arstneio, 0 1 3 4 7)
-            COMBOL(string_just, &string_just,arstneio, 2 3 4)
-            COMBOL(string_those, &string_those,arstneio, 3 4 5 7)
-            COMBOL(string_first, &string_first,arstneio, 1 2 6)
-            COMBOL(string_this, &string_this,arstneio, 2 3 4 5 8)
-            COMBO(combo_ctrlC, &kp LC(C), 2 8)
-            COMBO(combo_ctrlV, &kp LC(V), 3 8)
-            COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
-    };
 
 
      behaviors {
@@ -565,4 +381,189 @@
             >;
             };
      };
+
+    combos {
+            compatible ="zmk,combos";
+            combo_num {
+               timeout-ms = <100>;
+               key-positions = <0 1 2 3>;
+               layers = <arstneio nav media blt>;
+               bindings = <&to num>;
+            };
+            comb_numarst {
+               timeout-ms = <100>;
+               key-positions = <0 1 2 3>;
+               layers = <num>;
+               bindings = <&to arstneio>;
+            };
+            combo_nav {
+               timeout-ms = <100>;
+               key-positions = <4 5 6 7>;
+               layers = <arstneio num media blt>;
+               bindings = <&to nav>;
+            };
+            combo_navarst {
+                timeout-ms = <100>;
+                key-positions = <4 5 6 7>;
+                layers = <nav>;
+                bindings = <&to arstneio>;
+            };
+            combo_media {
+               timeout-ms = <100>;
+               key-positions = <0 1 2 3 4 5 6 7 8 9>;
+               layers = <arstneio nav num blt>;
+               bindings = <&to media>;
+            };
+            combo_mediaarst {
+                timeout-ms = <100>;
+                key-positions = <0 1 2 3 4 5 6 7 8 9>;
+                layers = <media>;
+                bindings = <&to arstneio>;
+            };
+            combo_blt {
+               timeout-ms = <100>;
+               key-positions = <3 4 8 9>;
+               layers = <arstneio nav media num>;
+               bindings = <&to blt>;
+            };
+            combo_bltarst {
+               timeout-ms = <100>;
+               key-positions = <3 4 8 9>;
+               layers = <blt>;
+               bindings = <&to arstneio>;
+               };
+             combo_ent {
+                timeout-ms = <100>;
+                key-positions = <8 9>;
+                bindings = <&mt ESC ENTER>;
+            };
+             combo_alt {
+               timeout-ms = <800>;
+               key-positions = <0 3 8>;
+               bindings = <&ta>;
+            };
+             combo_back {
+               timeout-ms = <100>;
+               key-positions = <0 7>;
+               bindings = <&kp BSPC>;
+            };
+              combo_rst {
+               timeout-ms = <100>;
+               key-positions = <0 1 2 3 4 5 6  7>;
+               bindings = <&reset>;
+            };
+              combo_bsword {
+               timeout-ms = <100>;
+               key-positions = <0 7 9>;
+               bindings = <&kp LC(BSPC)>;
+            };
+            combo_ctrl {
+               timeout-ms = <800>;
+               key-positions = <1 3 8>;
+               bindings = <&htct>;
+            };
+               combo_tab {
+               timeout-ms = <100>;
+               key-positions = <2 3 8>;
+               bindings = <&kp TAB>;
+            };
+               combo_win {
+               timeout-ms = <100>;
+               key-positions = <0 1 8>;
+               bindings = <&kp LGUI>;
+            };
+               combo_comma {
+               timeout-ms = <100>;
+               key-positions = <2 5>;
+               layers = <num arstneio>;
+               bindings = <&kp COMMA>;
+            };
+               
+               string_sim {
+               timeout-ms = <200>;
+               key-positions = <2 4 6>;
+               layers = <arstneio>;
+               bindings = <&string_sim>;
+            };
+            COMBOL(dt, &kp DOT,arstneio, 1 6)
+            COMBOL(cln, &kp SEMICOLON,arstneio nav num, 6 7)
+            COMBOL(ww, &kp W,arstneio , 0 1)
+            COMBOL(xx, &kp X,arstneio , 0 2)
+            COMBOL(pp, &kp P,arstneio , 0 3)
+            COMBOL(jj, &kp J,arstneio , 0 4)
+            COMBOL(qq, &kp Q,arstneio , 0 5)
+            COMBOL(lbrac, &kp LPAR,arstneio nav num, 0 6)
+            COMBOL(ff, &kp F,arstneio , 1 2)
+            COMBOL(cc, &kp C,arstneio , 1 3)
+            COMBOL(kk, &kp K,arstneio , 1 4)
+            COMBOL(zz, &kp Z,arstneio , 1 5)
+            COMBOL(rbrac, &kp RPAR,arstneio nav num, 1 7)
+            COMBOL(dd, &kp D,arstneio , 2 3)
+            COMBOL(mm, &kp M,arstneio , 2 4)
+            COMBOL(minus, &kp MINUS,arstneio nav num, 2 6)
+            COMBOL(apos, &kp APOS,arstneio nav num, 2 7)
+            COMBOL(bb, &mt N9 B,arstneio , 3 4)
+            COMBOL(gesc, &gresc,nav ,2 5)
+
+            COMBOL(nu9, &mt F9 N9,num, 3 4)
+            COMBOL(vv, &mt N0 V,arstneio , 3 5)
+            COMBOL(nten, &mt F10 N0,media, 3 5)
+            COMBOL(gg, &kp G,arstneio, 3 6)
+            COMBOL(quest, &mt EQUAL QMARK,arstneio nav num, 3 7)
+            COMBOL(hh, &mt NON_US_HASH H,arstneio , 4 5)
+            COMBOL(yy, &kp Y,arstneio , 4 6)
+            COMBOL(ll, &kp L,arstneio , 4 7)
+            COMBOL(uu, &kp U,arstneio , 5 6)
+            COMBOL(exc, &kp EXCL,arstneio num, 5 7)
+            COMBOL(slash, &kp SLASH,arstneio num, 2 4 7)
+            COMBOL(bslash, &kp BSLH,arstneio num, 2 4 7 8)
+            COMBOL(home, &kp HOME,arstneio nav num, 4 9)
+            COMBOL(end, &kp END,arstneio nav num, 7 9)
+            COMBOL(ribr, &kp RBKT,arstneio nav num, 1 7 8)
+            COMBOL(lebr, &kp LBKT,arstneio nav num, 0 6 8)
+            COMBOL(play, &kp C_PLAY, media, 0 3)
+            COMBOL(mute, &kp C_MUTE, media, 2 4)
+            COMBOL(string_the, &string_the,arstneio, 3 4 5)
+            COMBOL(string_there, &string_there,arstneio, 1 3 4 5)
+            COMBOL(string_and, &string_and,arstneio, 0 3 4)
+            COMBOL(string_you, &string_you,arstneio, 4 5 6)
+            COMBOL(string_vim, &string_vim,arstneio, 3 5 6)
+            COMBOL(string_ing, &string_ing,arstneio, 3 4 6)
+            COMBOL(string_for, &string_for,arstneio num, 1 2 7)
+            COMBOL(string_ion, &string_ion,arstneio, 4 6 7)
+            COMBOL(string_star, &string_star,arstneio, 1 2 3)
+            COMBOL(string_cluster, &string_cluster,arstneio, 1 3 4 7)
+            COMBOL(string_while, &string_while,arstneio, 0 1 4 5)
+            COMBOL(string_ight, &string_ight,arstneio, 3 4 5 6)
+            COMBOL(string_particle, &string_particle,arstneio, 0 1 3 4 7)
+            COMBOL(string_ould, &string_ould,arstneio, 5 6 7)
+            COMBOL(string_ough, &string_ough,arstneio, 1 2 5 6)
+            COMBOL(string_hydrodynamics, &string_hydrodynamics ,arstneio, 2 3 4 5 9)
+            COMBOL(string_interest, &string_interest,arstneio, 4 5 6 9)
+            COMBOL(string_function, &string_function,arstneio, 1 2 5 6 9)
+            COMBOL(string_have, &string_have,arstneio, 0 3 5)
+            COMBOL(string_that, &string_that,arstneio, 0 3 4 5)
+            COMBOL(string_with, &string_with,arstneio, 0 1 6)
+            COMBOL(string_what, &string_what,arstneio, 0 1 3 7)
+            COMBOL(string_who, &string_who,arstneio, 0 1 7)
+            COMBOL(string_which, &string_which,arstneio, 0 1 3)
+            COMBOL(string_make, &string_make,arstneio, 0 1 2 4)
+            COMBOL(string_real, &string_real,arstneio, 1 4 7)
+            COMBOL(string_take, &string_take,arstneio, 0 1 3 4)
+            COMBOL(string_good, &string_good,arstneio, 2 3 6 7)
+            COMBOL(string_done, &string_done,arstneio, 2 3 4 7)
+            COMBOL(string_ound, &string_ound,arstneio, 2 3 5 6 7)
+            COMBOL(string_ause, &string_ause,arstneio, 0 2 5 6)
+            COMBOL(string_had, &string_had,arstneio, 2 3 4 5)
+            COMBOL(string_print, &string_print,arstneio, 0 1 3 6)
+            COMBOL(string_wq, &string_wq,arstneio nav num, 0 1 5)
+            COMBOL(string_particle, &string_particle,arstneio, 0 1 3 4 7)
+            COMBOL(string_just, &string_just,arstneio, 2 3 4)
+            COMBOL(string_those, &string_those,arstneio, 3 4 5 7)
+            COMBOL(string_first, &string_first,arstneio, 1 2 6)
+            COMBOL(string_this, &string_this,arstneio, 2 3 4 5 8)
+            COMBO(combo_ctrlC, &kp LC(C), 2 8)
+            COMBO(combo_ctrlV, &kp LC(V), 3 8)
+            COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
+    };
      };
