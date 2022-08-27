@@ -233,13 +233,13 @@
               , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
               , <&macro_tap &kp O &kp U>;
               )
-             ZMK_MACRO(string_vim,
-              wait-ms = <10>;
-              tap-ms = <5>;
-              bindings =<&kp V>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp  &kp E>;
-              )
+             // ZMK_MACRO(string_vim,
+             // wait-ms = <10>;
+             // tap-ms = <5>;
+             //  bindings =<&kp V>
+             //  , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
+             // , <&macro_tap &kp  &kp E>;
+             //  )
              ZMK_MACRO(string_and,
               wait-ms = <10>;
               tap-ms = <5>;
