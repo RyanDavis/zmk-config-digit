@@ -58,7 +58,7 @@
              ZMK_MACRO(string_sim,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp S &kp I &kp M &kp U &kp L &mda &kp T &kp I &kp O &mdm N>;
+              bindings =<&kp S &kp I &kp M &kp U &kp L &mda &kp T &kp I &kp O &kp N>;
               )
              ZMK_MACRO(string_what,
               wait-ms = <10>;
