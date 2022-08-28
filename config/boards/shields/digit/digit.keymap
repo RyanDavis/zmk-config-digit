@@ -5,11 +5,11 @@
 &lt {
     tapping-term-ms = <30>;
     quick-tap-ms = <150>;
-    flavor = "balanced";
+    flavor = "hold-preffered";
     retro-tap;
     };
 &mt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <200>;
     flavor = "tap-preferred";
     };
 &sk {
@@ -48,17 +48,17 @@
             tapping-term-ms = <800>;
             bindings = <&sk LCTRL>, <&kt LCTRL>;
         };
-             mdm: shiftstring {
+             mda: shiftstring {
             compatible = "zmk,behavior-mod-morph";
             label = "shift string";
             #binding-cells = <0>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp A>, <&kp LS(A)>;
             mods = <(MOD_LSFT)>;
             };
              ZMK_MACRO(string_sim,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp S &mdm I LS(I) &mdm M LS(M) &mdm U LS(U) &mdm L LS(L) &mdm A LS(A) &mdm T LS(T) &mdm I LS(I) &mdm O LS(O) &mdm N>;
+              bindings =<&kp S &kp I &kp M &kp U &kp L &mda &kp T &kp I &kp O &mdm N>;
               )
              ZMK_MACRO(string_what,
               wait-ms = <10>;
@@ -533,7 +533,7 @@
             COMBOL(uu, &kp U,arstneio , 5 6)
             COMBOL(exc, &kp EXCL,arstneio num, 5 7)
             COMBOL(slash, &kp SLASH,arstneio num, 2 4 7)
-            COMBOL(bslash, &kp BSLH,arstneio num, 2 4 7 8)
+            COMBOL(bslash, &kp NON_US_BSLH,arstneio num, 2 4 7 8)
             COMBOL(home, &kp HOME,arstneio nav num, 4 9)
             COMBOL(end, &kp END,arstneio nav num, 7 9)
             COMBOL(ribr, &kp RBKT,arstneio nav num, 1 7 8)
