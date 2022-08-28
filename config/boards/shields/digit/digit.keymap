@@ -5,7 +5,7 @@
 &lt {
     tapping-term-ms = <30>;
     quick-tap-ms = <150>;
-    flavor = "hold-preffered";
+    flavor = "hold-preferred";
     retro-tap;
     };
 &mt {
