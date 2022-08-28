@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include "util.h"
 &lt {
-    tapping-term-ms = <50>;
+    tapping-term-ms = <30>;
     quick-tap-ms = <150>;
     flavor = "balanced";
     retro-tap;
@@ -14,7 +14,7 @@
     };
 &sk {
     release-after-ms = <10000>;
-    quick-release;
+    # quick-release;
     };
 #define arstneio 0
 #define num 1
@@ -48,12 +48,17 @@
             tapping-term-ms = <800>;
             bindings = <&sk LCTRL>, <&kt LCTRL>;
         };
+             mdm: shiftstring {
+            compatible = "zmk,behavior-mod-morph";
+            label = "shift string";
+            #binding-cells = <0>;
+            bindings = <&kp>, <&kp>;
+            mods = <(MOD_LSFT)>;
+            };
              ZMK_MACRO(string_sim,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp S>
-              , <&macro_press &kp LSHIFT>, <&macro_release &kp LSHIFT>
-              , <&macro_tap &kp I &kp M &kp U &kp L &kp A &kp T &kp I &kp O &kp N>;
+              bindings =<&kp S &mdm I LS(I) &mdm M LS(M) &mdm U LS(U) &mdm L LS(L) &mdm A LS(A) &mdm T LS(T) &mdm I LS(I) &mdm O LS(O) &mdm N>;
               )
              ZMK_MACRO(string_what,
               wait-ms = <10>;
@@ -433,7 +438,7 @@
                bindings = <&to arstneio>;
                };
              combo_ent {
-                timeout-ms = <100>;
+                timeout-ms = <50>;
                 key-positions = <8 9>;
                 bindings = <&mt ESC ENTER>;
             };
@@ -443,7 +448,7 @@
                bindings = <&ta>;
             };
              combo_back {
-               timeout-ms = <100>;
+               timeout-ms = <50>;
                key-positions = <0 7>;
                bindings = <&kp BSPC>;
             };
@@ -469,7 +474,7 @@
                bindings = <&kt LCTRL>;
             };
             combo_lalt {
-               timeout-ms = <100>;
+               timeout-ms = <50>;
                key-positions = <0 3>;
                layers = <nav>;
                bindings = <&kt LALT>;
@@ -485,7 +490,7 @@
                bindings = <&kp LGUI>;
             };
             combo_comma {
-               timeout-ms = <100>;
+               timeout-ms = <50>;
                key-positions = <2 5>;
                layers = <num arstneio>;
                bindings = <&kp COMMA>;
