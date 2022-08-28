@@ -9,7 +9,7 @@
     retro-tap;
     };
 &mt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <150>;
     flavor = "tap-preferred";
     };
 &sk {
