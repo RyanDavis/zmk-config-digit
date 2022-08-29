@@ -25,6 +25,16 @@
 
 
      behaviors {
+             pht: positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "POSITIONAL_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings= <&kp>, <&mo>;
+            hold-triggerg-key-positions = <4 5 6 7>;
+            };
              sc: shiftorcaps {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
@@ -426,10 +436,6 @@
                layers = <arstneio>;
                bindings = <&string_sim>;
             };
-//            COMBO(up, &kp UP, 8 5)
-//            COMBO(down, &kp DOWN, 8 6)
-//            COMBO(left, &kp LEFT, 8 4)
-//            COMBO(right, &kp RIGHT, 8 7)
             COMBOL(dt, &kp DOT,arstneio, 1 6)
             COMBOL(cln, &kp SEMICOLON,arstneio nav num, 6 7)
             COMBOL(ww, &kp W,arstneio , 0 1)
