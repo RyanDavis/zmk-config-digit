@@ -1,4 +1,4 @@
-#include <behaviorts.dtsi>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include "util.h"
@@ -461,7 +461,7 @@
                bindings = <&to arstneio>;
                };
              combo_ent {
-                timeout-ms = <50>;
+                timeout-ms = <30>;
                 key-positions = <8 9>;
                 bindings = <&mt ESC ENTER>;
             };
@@ -471,7 +471,7 @@
                bindings = <&sk LALT>;
             };
              combo_back {
-               timeout-ms = <50>;
+               timeout-ms = <70>;
                key-positions = <0 7>;
                bindings = <&kp BSPC>;
             };
@@ -513,7 +513,7 @@
                bindings = <&kp LGUI>;
             };
             combo_comma {
-               timeout-ms = <50>;
+               timeout-ms = <30>;
                key-positions = <2 5>;
                layers = <num arstneio>;
                bindings = <&kp COMMA>;
