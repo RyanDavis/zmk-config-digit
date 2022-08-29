@@ -33,7 +33,8 @@
             tapping-term-ms = <800>;
             quick-tap-ms = <150>;
             global-quick-tap;
-            bindings = <&kp SPACE>, <&mo nav>;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <4 5 6 7>;
          };
              sc: shiftorcaps {
             compatible = "zmk,behavior-tap-dance";
