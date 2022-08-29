@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include "util.h"
 &lt {
-    tapping-term-ms = <30>;
+    tapping-term-ms = <10>;
     quick-tap-ms = <150>;
     flavor = "hold-preferred";
   //  retro-tap;
@@ -58,91 +58,67 @@
              ZMK_MACRO(string_sim,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp S &kp I &kp M &kp U &kp L &mda &kp T &kp I &kp O &kp N>;
+              bindings =<&kp S &kp I &kp M &kp U &kp L &kp A&kp T &kp I &kp O &kp N>;
               )
              ZMK_MACRO(string_what,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp W>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp A &kp T>;
+              bindings = <&kp W &kp H &kp A &kp T>;
               )
               ZMK_MACRO(string_had,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp H>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp A &kp D>;
+              bindings = <&kp H &kp A &kp D>;
               )
              ZMK_MACRO(string_who,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp W>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp O>;
+              bindings = <&kp W &kp H &kp O>;
               )
              ZMK_MACRO(string_the,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp T>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp E>;
+              bindings = <&kp T &kp H &kp E>;
               )
              ZMK_MACRO(string_there,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp T>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp E &kp R &kp E>;
+              bindings = <&kp T &kp H &kp E &kp R &kp E>;
               )
              ZMK_MACRO(string_you,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp Y>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp O &kp U>;
+              bindings = <&kp Y &kp O &kp U>;
               )
              ZMK_MACRO(string_vim,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp V>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp I &kp M>;
+              bindings = <&kp V &kp I &kp M>;
               )
              ZMK_MACRO(string_and,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp A>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp N &kp D>;
+              bindings = <&kp A &kp N &kp D>;
               )
              ZMK_MACRO(string_star,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp S>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp T &kp A &kp R>;
+              bindings = <&kp S &kp T &kp A &kp R>;
               )
              ZMK_MACRO(string_cluster,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp C>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp L &kp U &kp S &kp T &kp E &kp R>;
+              bindings = <&kp C &kp L &kp U &kp S &kp T &kp E &kp R>;
               )
              ZMK_MACRO(string_for,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp F>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp O &kp R>;
+              bindings = <&kp F &kp O &kp R>;
               )
              ZMK_MACRO(string_how,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp H>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp O &kp W>;
+              bindings = <&kp H &kp O &kp W>;
               )
              ZMK_MACRO(string_wq,
               wait-ms = <10>;
@@ -152,190 +128,138 @@
              ZMK_MACRO(string_while,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp W>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp I &kp L &kp E>;
+              bindings = <&kp W &kp H &kp I &kp L &kp E>;
               )
              ZMK_MACRO(string_ing,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp I>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp N &kp G>;
+              bindings = <&kp I &kp N &kp G>;
               )
              ZMK_MACRO(string_just,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp J>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp U &kp S &kp T>;
+              bindings = <&kp J &kp U &kp S &kp T>;
               )
              ZMK_MACRO(string_ight,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp I>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp G &kp H &kp T>;
+              bindings = <&kp I &kp G &kp H &kp T>;
               )
 
              ZMK_MACRO(string_ough,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp O>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp U &kp G &kp H >;
+              bindings = <&kp O &kp U &kp G &kp H >;
               )
 
              ZMK_MACRO(string_ion, 
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp I>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp O &kp N>;
+              bindings = <&kp I &kp O &kp N>;
               )
 
              ZMK_MACRO(string_those,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp T>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp O &kp S &kp E>;
+              bindings = <&kp T &kp H &kp O &kp S &kp E>;
               )
 
              ZMK_MACRO(string_particle,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp P>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp A &kp R &kp T &kp I &kp C &kp L &kp E>;
+              bindings = <&kp P &kp A &kp R &kp T &kp I &kp C &kp L &kp E>;
               )
 
              ZMK_MACRO(string_hydrodynamics,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp H>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp Y &kp D &kp R &kp O &kp D &kp Y &kp N &kp A &kp M &kp I &kp C &kp S>;
+              bindings = <&kp H &kp Y &kp D &kp R &kp O &kp D &kp Y &kp N &kp A &kp M &kp I &kp C &kp S>;
               )
 
              ZMK_MACRO(string_interest,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp I>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp N &kp T &kp E &kp R &kp E &kp S &kp T>;
+              bindings = <&kp I &kp N &kp T &kp E &kp R &kp E &kp S &kp T>;
               )
              ZMK_MACRO(string_ould,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp O>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp U &kp L &kp D>;
+              bindings = <&kp O &kp U &kp L &kp D>;
               )
              ZMK_MACRO(string_first,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp F>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp I &kp R &kp S &kp T>;
+              bindings = <&kp F &kp I &kp R &kp S &kp T>;
               )
              ZMK_MACRO(string_have,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp H>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp A &kp V &kp E>;
+              bindings = <&kp H &kp A &kp V &kp E>;
               )
              ZMK_MACRO(string_that,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp T>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp A &kp T>;
+              bindings = <&kp T &kp H &kp A &kp T>;
               )
              ZMK_MACRO(string_which,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp W>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp I &kp C &kp H>;
+              bindings = <&kp W &kp H &kp I &kp C &kp H>;
               )
              ZMK_MACRO(string_make,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp M>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp A &kp K &kp E>;
+              bindings = <&kp M &kp A &kp K &kp E>;
               )
              ZMK_MACRO(string_function,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp F>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp U &kp N &kp C &kp T &kp I &kp O &kp N>;
+              bindings = <&kp F &kp U &kp N &kp C &kp T &kp I &kp O &kp N>;
               )
              ZMK_MACRO(string_real,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp R>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp E &kp A &kp L>;
+              bindings = <&kp R &kp E &kp A &kp L>;
               )
              ZMK_MACRO(string_take,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp T>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp A &kp K &kp E>;
+              bindings = <&kp T &kp A &kp K &kp E>;
               )
              ZMK_MACRO(string_good,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp G>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp O &kp O &kp D>;
+              bindings = <&kp G &kp O &kp O &kp D>;
               )
              ZMK_MACRO(string_print,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp P>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp R &kp I &kp N &kp T>;
+              bindings = <&kp P &kp R &kp I &kp N &kp T>;
               )
              ZMK_MACRO(string_ause,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp A>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp U &kp S &kp E>;
+              bindings = <&kp A &kp U &kp S &kp E>;
               )
              ZMK_MACRO(string_this,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp T>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp H &kp I &kp S>;
+              bindings = <&kp T &kp H &kp I &kp S>;
               )
              ZMK_MACRO(string_ound,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp O>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp U &kp N &kp D>;
+              bindings = <&kp O &kp U &kp N &kp D>;
               )
              ZMK_MACRO(string_done,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp D>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp O &kp N &kp E>;
+              bindings = <&kp D &kp O &kp N &kp E>;
               )
              ZMK_MACRO(string_with,
               wait-ms = <10>;
               tap-ms = <5>;
-              bindings =<&kp W>
-              , <&macro_press &kp LSHIFT>,<&macro_release &kp LSHIFT>
-              , <&macro_tap &kp I &kp T &kp H>;
+              bindings = <&kp W &kp I &kp T &kp H>;
               )
              ZMK_MACRO(combo_ctrlC,
               wait-ms = <10>;
