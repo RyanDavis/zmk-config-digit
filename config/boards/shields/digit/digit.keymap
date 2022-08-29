@@ -27,7 +27,7 @@
      behaviors {
 
              snv: spaceornav {
-            compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-hold-tap";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <800>;
