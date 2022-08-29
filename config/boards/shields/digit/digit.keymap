@@ -35,6 +35,14 @@
             bindings= <&kp>, <&mo>;
             hold-triggerg-key-positions = <4 5 6 7>;
             };
+
+             snv: spaceornav {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <800>;
+            bindings = <&kp SPACE>, <&mo nav>;
+         };
              sc: shiftorcaps {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
