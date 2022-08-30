@@ -200,10 +200,10 @@
               tap-ms = <1>;
               bindings = <&kp A &kp W &kp A &kp Y>;
               )
-             ZMK_MACRO(string_,
+             ZMK_MACRO(string_progress,
               wait-ms = <10>;
               tap-ms = <1>;
-              bindings = <&kp T &kp H &kp E>;
+              bindings = <&kp P &kp R &kp O &kp G &kp R &kp E &kp S &kp S>;
               )
              ZMK_MACRO(string_the,
               wait-ms = <10>;
@@ -648,6 +648,7 @@
             COMBOL(string_change, &string_change,arstneio, 1 3 4 5 6)
             COMBOL(string_system, &string_system,arstneio, 2 3 4 6 9)
             COMBOL(string_program, &string_program,arstneio, 0 1 3 7 9)
+            COMBOL(string_progress, &string_progress,arstneio, 0 1 3 6 7)
             COMBOL(string_resolution, &string_resolution,arstneio, 1 4 5 6 7)
             COMBOL(string_about, &string_about,arstneio, 3 4 5 6 7)
             COMBOL(string_ever, &string_ever,arstneio, 1 3 5)
@@ -658,7 +659,7 @@
             COMBOL(string_also, &string_also,arstneio, 0 4 7)       
             COMBOL(string_when, &string_when,arstneio, 0 1 4)       
             COMBOL(string_away, &string_away,arstneio, 0 1 4 6)       
-            COMBOL(string_has, &string_has,arstneio, 0 4 5)       
+            //COMBOL(string_has, &string_has,arstneio, 0 4 5)       
             COMBOL(string_basically, &string_basically,arstneio, 0 6 7)       
             COMBOL(string_earn, &string_earn,arstneio, 1 4 5)       
             COMBOL(string_ready, &string_ready,arstneio, 1 2 3 4 6)       
