@@ -28,7 +28,7 @@
 
              snv: spaceornav {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_DANCE_0";
+            label = "holdtap";
             #binding-cells = <2>;
             tapping-term-ms = <800>;
             quick-tap-ms = <150>;
@@ -619,7 +619,6 @@
             COMBOL(string_come, &string_come,arstneio, 1 3 7)       
             COMBOL(string_cool, &string_cool,arstneio, 1 3 7 9)       
             COMBOL(string_find, &string_find,arstneio, 1 2 4)       
-            COMBOL(string_now, &string_now,arstneio, 0 1 7)       
             COMBOL(string_will, &string_will,arstneio, 0 1 4 7)       
             COMBOL(string_also, &string_also,arstneio, 0 4 7)       
             COMBOL(string_when, &string_when,arstneio, 0 1 4)       
