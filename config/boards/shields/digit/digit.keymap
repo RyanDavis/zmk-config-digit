@@ -518,7 +518,7 @@
                bindings = <&to arstneio>;
                };
              combo_ent {
-                timeout-ms = <30>;
+                timeout-ms = <50>;
                 key-positions = <8 9>;
                 bindings = <&mt ESC ENTER>;
             };
