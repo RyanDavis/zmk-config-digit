@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include "util.h"
+#include <dt-bindings/zmk/outputs.h>
 &lt {
     tapping-term-ms = <150>;
     quick-tap-ms = <150>;
@@ -204,6 +205,26 @@
               wait-ms = <10>;
               tap-ms = <1>;
               bindings = <&kp P &kp R &kp O &kp G &kp R &kp E &kp S &kp S>;
+              )
+             ZMK_MACRO(string_use,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp U &kp S &kp E>;
+              )
+             ZMK_MACRO(string_same,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp S &kp A &kp M &kp E>;
+              )
+             ZMK_MACRO(string_use,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp H &kp A &kp S>;
+              )
+             ZMK_MACRO(string_going,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp G &kp O &kp I &kp N &kp G>;
               )
              ZMK_MACRO(string_the,
               wait-ms = <10>;
@@ -440,7 +461,7 @@
             };
             blt {
             bindings = <
-            &none &none &none &none &bt BT_PRV &none &none &bt BT_NXT
+            &OUT_TOG &OUT_USB &none &none &bt BT_PRV &none &none &bt BT_NXT
                               &none &none
             >;
             };
@@ -659,11 +680,14 @@
             COMBOL(string_also, &string_also,arstneio, 0 4 7)       
             COMBOL(string_when, &string_when,arstneio, 0 1 4)       
             COMBOL(string_away, &string_away,arstneio, 0 1 4 6)       
-            //COMBOL(string_has, &string_has,arstneio, 0 4 5)       
             COMBOL(string_basically, &string_basically,arstneio, 0 6 7)       
             COMBOL(string_earn, &string_earn,arstneio, 1 4 5)       
             COMBOL(string_ready, &string_ready,arstneio, 1 2 3 4 6)       
             COMBOL(string_individual, &string_individual,arstneio, 2 3 4 6)       
+            COMBOL(string_use, &string_use,arstneio, 2 5 6)       
+            COMBOL(string_same, &string_same,arstneio, 0 2 4 6)       
+            COMBOL(string_has, &string_has,arstneio, 2 4 5)       
+            COMBOL(string_going, &string_going,arstneio, 3 4 6 7)       
             COMBO(combo_ctrlC, &kp LC(C), 2 8)
             COMBO(combo_ctrlV, &kp LC(V), 3 8)
             COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
