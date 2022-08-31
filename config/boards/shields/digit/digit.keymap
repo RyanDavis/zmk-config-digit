@@ -461,7 +461,7 @@
             };
             blt {
             bindings = <
-            &OUT_TOG &OUT_USB &none &none &bt BT_PRV &none &none &bt BT_NXT
+            &out OUT_TOG &out OUT_USB &out OUT_BLE &none &bt BT_PRV &none &none &bt BT_NXT
                               &none &none
             >;
             };
