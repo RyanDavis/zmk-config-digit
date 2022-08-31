@@ -231,7 +231,7 @@
               tap-ms = <1>;
               bindings = <&kp R &kp A &kp N &kp G &kp E>;
               )
-             ,MK_MACRO(string_out,
+             ZMK_MACRO(string_out,
               wait-ms = <10>;
               tap-ms = <1>;
               bindings = <&kp O &kp U &kp T>;
