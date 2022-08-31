@@ -7,7 +7,6 @@
     tapping-term-ms = <150>;
     quick-tap-ms = <150>;
     flavor = "hold-preferred";
-  //  retro-tap;
     };
 &mt {
     tapping-term-ms = <200>;
@@ -15,7 +14,6 @@
     };
 &sk {
     release-after-ms = <10000>;
-   // quick-release;
     };
 #define arstneio 0
 #define num 1
@@ -23,10 +21,7 @@
 #define media 3 
 #define blt 4
 / {
-
-
      behaviors {
-
              snv: spaceornav {
             compatible = "zmk,behavior-hold-tap";
             label = "holdtap";
@@ -225,6 +220,26 @@
               wait-ms = <10>;
               tap-ms = <1>;
               bindings = <&kp G &kp O &kp I &kp N &kp G>;
+              )
+             ZMK_MACRO(string_was,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp W &kp A &kp S>;
+              )
+             ZMK_MACRO(string_range,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp R &kp A &kp N &kp G &kp E>;
+              )
+             ,MK_MACRO(string_out,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp O &kp U &kp T>;
+              )
+             ZMK_MACRO(string_astrophysics,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp A &kp S &kp T &kp R &kp O &kp P &kp H &kp Y &kp S &kp I &kp C &kp S>;
               )
              ZMK_MACRO(string_the,
               wait-ms = <10>;
@@ -688,6 +703,10 @@
             COMBOL(string_same, &string_same,arstneio, 0 2 4 6)       
             COMBOL(string_has, &string_has,arstneio, 2 4 5)       
             COMBOL(string_going, &string_going,arstneio, 3 4 6 7)       
+            COMBOL(string_was, &string_was,arstneio, 0 1 2)       
+            COMBOL(string_range, &string_range,arstneio, 1 3 4 6)       
+            COMBOL(string_out, &string_out,arstneio, 3 5 6 7)       
+            COMBOL(string_astrophysics, &string_astrophysics,arstneio, 0 2 3 8)       
             COMBO(combo_ctrlC, &kp LC(C), 2 8)
             COMBO(combo_ctrlV, &kp LC(V), 3 8)
             COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
