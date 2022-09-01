@@ -241,6 +241,36 @@
               tap-ms = <1>;
               bindings = <&kp O &kp V &kp E &kp R>;
               )
+             ZMK_MACRO(string_join,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp J &kp O &kp I &kp N>;
+              )
+             ZMK_MACRO(string_give,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp G &kp I &kp V &kp E>;
+              )
+             ZMK_MACRO(string_ously,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp O &kp U &kp S &kp L &kp Y>;
+              )
+             ZMK_MACRO(string_ous,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp O &kp U &kp S>;
+              )
+             ZMK_MACRO(string_say,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp S &kp A &kp Y>;
+              )
+             ZMK_MACRO(string_eigh,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp E &kp I &kp G &kp H>;
+              )
              ZMK_MACRO(string_the,
               wait-ms = <10>;
               tap-ms = <1>;
@@ -646,7 +676,7 @@
             COMBOL(string_star, &string_star,arstneio, 1 2 3)
             COMBOL(string_cluster, &string_cluster,arstneio, 1 3 4 7)
             COMBOL(string_while, &string_while,arstneio, 0 1 4 5)
-            COMBOL(string_ight, &string_ight,arstneio, 3 4 5 6)
+            COMBOL(string_igh, &string_igh,arstneio, 3 4 5 6)
             COMBOL(string_particle, &string_particle,arstneio, 0 1 3 4 7)
             COMBOL(string_ould, &string_ould,arstneio, 5 6 7)
             COMBOL(string_ough, &string_ough,arstneio, 1 2 5 6)
@@ -708,6 +738,12 @@
             COMBOL(string_out, &string_out,arstneio, 3 5 6 7)       
             COMBOL(string_astrophysics, &string_astrophysics,arstneio, 0 2 3 8)       
             COMBOL(string_over, &string_over,arstneio, 1 3 5 7)       
+            COMBOL(string_join, &string_join,arstneio, 0 4 6 7)       
+            COMBOL(string_give, &string_give,arstneio, 3 5 6 8)       
+            COMBOL(string_ous, &string_ous,arstneio, 2 5 6 7)       
+            COMBOL(string_ously, &string_ously,arstneio, 2 4 5 6 7)       
+            COMBOL(string_say, &string_say,arstneio, 0 4 6)       
+            COMBOL(string_eigh, &string_eigh,arstneio, 3 4 5 6 9)       
             COMBO(combo_ctrlC, &kp LC(C), 2 8)
             COMBO(combo_ctrlV, &kp LC(V), 3 8)
             COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
