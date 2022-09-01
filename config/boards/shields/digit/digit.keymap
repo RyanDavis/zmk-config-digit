@@ -40,12 +40,13 @@
             bindings = <&sk LSHIFT>, <&kt LSHIFT>, <&mo num>;
         };
 
-             ta: altog {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
+             ee: entoresc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_MORPH_EE";
             #binding-cells = <0>;
-            tapping-term-ms = <800>;
-            bindings = <&sk LALT>, <&kt LALT>;
+            tapping-term-ms = <100>;
+            bindings = <&kp ENTER>, <&kp ESC>;
+            mods = <(MOD_LSFT)>
         };
 
              htct: torhctrl {
@@ -280,6 +281,16 @@
               wait-ms = <10>;
               tap-ms = <1>;
               bindings = <&kp F &kp O &kp L &kp L &kp O &kp W>;
+              )
+             ZMK_MACRO(string_sure,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp S &kp U &kp R &kp E>;
+              )
+             ZMK_MACRO(string_plan,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp P &kp L &kp E>;
               )
              ZMK_MACRO(string_the,
               wait-ms = <10>;
@@ -575,7 +586,7 @@
              combo_ent {
                 timeout-ms = <100>;
                 key-positions = <8 9>;
-                bindings = <&mt ESC ENTER>;
+                bindings = <&ee>;
             };
              combo_alt {
                timeout-ms = <200>;
@@ -756,6 +767,7 @@
             COMBOL(string_eigh, &string_eigh,arstneio, 3 4 5 6 9)       
             COMBOL(string_some, &string_some,arstneio, 2 4 6 7)       
             COMBOL(string_follow, &string_follow,arstneio, 0 1 2 4 7)       
+            COMBOL(string_sure, &string_sure,arstneio, 1 2 5 6 8)       
             COMBO(combo_ctrlC, &kp LC(C), 2 8)
             COMBO(combo_ctrlV, &kp LC(V), 3 8)
             COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
