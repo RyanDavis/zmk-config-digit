@@ -344,7 +344,7 @@
              ZMK_MACRO(string_igh,
               wait-ms = <10>;
               tap-ms = <1>;
-              bindings = <&kp I &kp G &kp H &kp T>;
+              bindings = <&kp I &kp G &kp H>;
               )
 
              ZMK_MACRO(string_ough,
