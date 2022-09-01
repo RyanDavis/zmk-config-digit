@@ -341,7 +341,7 @@
               tap-ms = <1>;
               bindings = <&kp J &kp U &kp S &kp T>;
               )
-             ZMK_MACRO(string_ight,
+             ZMK_MACRO(string_igh,
               wait-ms = <10>;
               tap-ms = <1>;
               bindings = <&kp I &kp G &kp H &kp T>;
