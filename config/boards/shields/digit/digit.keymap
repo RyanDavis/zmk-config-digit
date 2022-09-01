@@ -271,6 +271,16 @@
               tap-ms = <1>;
               bindings = <&kp E &kp I &kp G &kp H>;
               )
+             ZMK_MACRO(string_some,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp S &kp O &kp M &kp E>;
+              )
+             ZMK_MACRO(string_follow,
+              wait-ms = <10>;
+              tap-ms = <1>;
+              bindings = <&kp F &kp O &kp L &kp L &kp O &kp W>;
+              )
              ZMK_MACRO(string_the,
               wait-ms = <10>;
               tap-ms = <1>;
@@ -744,6 +754,8 @@
             COMBOL(string_ously, &string_ously,arstneio, 2 4 5 6 7)       
             COMBOL(string_say, &string_say,arstneio, 0 4 6)       
             COMBOL(string_eigh, &string_eigh,arstneio, 3 4 5 6 9)       
+            COMBOL(string_some, &string_some,arstneio, 2 4 6 7)       
+            COMBOL(string_follow, &string_follow,arstneio, 0 1 2 4 7)       
             COMBO(combo_ctrlC, &kp LC(C), 2 8)
             COMBO(combo_ctrlV, &kp LC(V), 3 8)
             COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
