@@ -44,7 +44,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_MORPH_EE";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
             bindings = <&kp ENTER>, <&kp ESC>;
             mods = <(MOD_LSFT)>;
         };
