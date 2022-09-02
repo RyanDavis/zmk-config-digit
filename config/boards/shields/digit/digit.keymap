@@ -46,7 +46,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp ENTER>, <&kp ESC>;
-            mods = <(MOD_LSFT)>
+            mods = <(MOD_LSFT)>;
         };
 
              htct: torhctrl {
