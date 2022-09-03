@@ -18,7 +18,7 @@
 #define arstneio 0
 #define num 1
 #define nav 2
-#define media 3 
+#define media 3
 #define blt 4
 / {
      behaviors {
@@ -98,7 +98,7 @@
               )
              ZMK_MACRO(string_each,
               wait-ms = <10>;
-              tap-ms = <1>; 
+              tap-ms = <1>;
               bindings = <&kp E &kp A &kp C &kp H>;
               )
              ZMK_MACRO(string_ink,
@@ -373,7 +373,7 @@
               bindings = <&kp O &kp U &kp G &kp H >;
               )
 
-             ZMK_MACRO(string_ion, 
+             ZMK_MACRO(string_ion,
               wait-ms = <10>;
               tap-ms = <1>;
               bindings = <&kp I &kp O &kp N>;
@@ -497,13 +497,13 @@
               ,<&macro_release &kp LCTRL>;
               )
              };
-     keymap { 
+     keymap {
              compatible = "zmk,keymap";
 
              arstneio {
-             bindings = < 
+             bindings = <
              &mt N1 A &mt N2 R &mt N3 S  &mt N4 T  &mt N5 N &mt N6 E  &mt N7 I  &mt N8 O
-                                &snv nav SPACE &sc 
+                                &snv nav SPACE &sc
              >;
              };
              num {
@@ -640,14 +640,14 @@
                layers = <num arstneio>;
                bindings = <&kp COMMA>;
             };
-               
+
             string_sim {
                timeout-ms = <200>;
                key-positions = <2 4 6>;
                layers = <arstneio>;
                bindings = <&string_sim>;
             };
-            COMBOL(dt, &kp DOT,arstneio, 1 6)
+            COMBOL(dt, &kp DOT,arstneio num, 1 6)
             COMBOL(cln, &kp SEMICOLON,arstneio nav num, 6 7)
             COMBOL(ww, &kp W,arstneio , 0 1)
             COMBOL(xx, &kp X,arstneio , 0 2)
@@ -738,36 +738,36 @@
             COMBOL(string_resolution, &string_resolution,arstneio, 1 4 5 6 7)
             COMBOL(string_about, &string_about,arstneio, 3 4 5 6 7)
             COMBOL(string_ever, &string_ever,arstneio, 1 3 5)
-            COMBOL(string_come, &string_come,arstneio, 1 3 7)       
-            COMBOL(string_cool, &string_cool,arstneio, 1 3 7 9)       
-            COMBOL(string_find, &string_find,arstneio, 1 2 4)       
-            COMBOL(string_will, &string_will,arstneio, 0 1 4 7)       
-            COMBOL(string_also, &string_also,arstneio, 0 4 7)       
-            COMBOL(string_when, &string_when,arstneio, 0 1 4)       
-            COMBOL(string_away, &string_away,arstneio, 0 1 4 6)       
-            COMBOL(string_basically, &string_basically,arstneio, 0 6 7)       
-            COMBOL(string_earn, &string_earn,arstneio, 1 4 5)       
-            COMBOL(string_ready, &string_ready,arstneio, 1 2 3 4 6)       
-            COMBOL(string_individual, &string_individual,arstneio, 2 3 4 6)       
-            COMBOL(string_use, &string_use,arstneio, 2 5 6)       
-            COMBOL(string_same, &string_same,arstneio, 0 2 4 6)       
-            COMBOL(string_has, &string_has,arstneio, 2 4 5)       
-            COMBOL(string_going, &string_going,arstneio, 3 4 6 7)       
-            COMBOL(string_was, &string_was,arstneio, 0 1 2)       
-            COMBOL(string_range, &string_range,arstneio, 1 3 4 6)       
-            COMBOL(string_out, &string_out,arstneio, 3 5 6 7)       
-            COMBOL(string_astrophysics, &string_astrophysics,arstneio, 0 2 3 8)       
-            COMBOL(string_over, &string_over,arstneio, 1 3 5 7)       
-            COMBOL(string_join, &string_join,arstneio, 0 4 6 7)       
-            COMBOL(string_give, &string_give,arstneio, 3 5 6 8)       
-            COMBOL(string_ous, &string_ous,arstneio, 2 5 6 7)       
-            COMBOL(string_ously, &string_ously,arstneio, 2 4 5 6 7)       
-            COMBOL(string_say, &string_say,arstneio, 0 4 6)       
-            COMBOL(string_eigh, &string_eigh,arstneio, 3 4 5 6 9)       
-            COMBOL(string_some, &string_some,arstneio, 2 4 6 7)       
-            COMBOL(string_follow, &string_follow,arstneio, 0 1 2 4 7)       
-            COMBOL(string_sure, &string_sure,arstneio, 1 2 5 6 8)       
-            COMBOL(string_plan, &string_plan,arstneio, 0 3 4 7)       
+            COMBOL(string_come, &string_come,arstneio, 1 3 7)
+            COMBOL(string_cool, &string_cool,arstneio, 1 3 7 9)
+            COMBOL(string_find, &string_find,arstneio, 1 2 4)
+            COMBOL(string_will, &string_will,arstneio, 0 1 4 7)
+            COMBOL(string_also, &string_also,arstneio, 0 4 7)
+            COMBOL(string_when, &string_when,arstneio, 0 1 4)
+            COMBOL(string_away, &string_away,arstneio, 0 1 4 6)
+            COMBOL(string_basically, &string_basically,arstneio, 0 6 7)
+            COMBOL(string_earn, &string_earn,arstneio, 1 4 5)
+            COMBOL(string_ready, &string_ready,arstneio, 1 2 3 4 6)
+            COMBOL(string_individual, &string_individual,arstneio, 2 3 4 6)
+            COMBOL(string_use, &string_use,arstneio, 2 5 6)
+            COMBOL(string_same, &string_same,arstneio, 0 2 4 6)
+            COMBOL(string_has, &string_has,arstneio, 2 4 5)
+            COMBOL(string_going, &string_going,arstneio, 3 4 6 7)
+            COMBOL(string_was, &string_was,arstneio, 0 1 2)
+            COMBOL(string_range, &string_range,arstneio, 1 3 4 6)
+            COMBOL(string_out, &string_out,arstneio, 3 5 6 7)
+            COMBOL(string_astrophysics, &string_astrophysics,arstneio, 0 2 3 8)
+            COMBOL(string_over, &string_over,arstneio, 1 3 5 7)
+            COMBOL(string_join, &string_join,arstneio, 0 4 6 7)
+            COMBOL(string_give, &string_give,arstneio, 3 5 6 8)
+            COMBOL(string_ous, &string_ous,arstneio, 2 5 6 7)
+            COMBOL(string_ously, &string_ously,arstneio, 2 4 5 6 7)
+            COMBOL(string_say, &string_say,arstneio, 0 4 6)
+            COMBOL(string_eigh, &string_eigh,arstneio, 3 4 5 6 9)
+            COMBOL(string_some, &string_some,arstneio, 2 4 6 7)
+            COMBOL(string_follow, &string_follow,arstneio, 0 1 2 4 7)
+            COMBOL(string_sure, &string_sure,arstneio, 1 2 5 6 8)
+            COMBOL(string_plan, &string_plan,arstneio, 0 3 4 7)
             COMBO(combo_ctrlC, &kp LC(C), 2 8)
             COMBO(combo_ctrlV, &kp LC(V), 3 8)
             COMBO(combo_ctrlS, &kp LC(S), 1 2 3 8)
