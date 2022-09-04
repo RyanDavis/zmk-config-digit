@@ -638,7 +638,7 @@
                timeout-ms = <30>;
                key-positions = <2 5>;
                layers = <num arstneio>;
-               slow-release = 1
+               slow-release;
                bindings = <&kp COMMA>;
             };
 
