@@ -595,7 +595,7 @@
              combo_back {
                timeout-ms = <100>;
                key-positions = <0 7>;
-               bindings = <&kp BSPC>;
+               bindings = <&kp SEMICOLON>;
             };
               combo_rst {
                timeout-ms = <100>;
@@ -604,7 +604,7 @@
             };
               combo_bsword {
                timeout-ms = <100>;
-               key-positions = <0 7 9>;
+               key-positions = <6 7 9>;
                bindings = <&kp LC(BSPC)>;
             };
             combo_ctrl {
@@ -649,7 +649,7 @@
                bindings = <&string_sim>;
             };
             COMBOL(dt, &kp DOT,arstneio num, 1 6)
-            COMBOL(cln, &kp SEMICOLON,arstneio nav num, 6 7)
+            COMBOL(cln, &kp BSPC,arstneio nav num, 6 7)
             COMBOL(ww, &kp W,arstneio , 0 1)
             COMBOL(xx, &kp X,arstneio , 0 2)
             COMBOL(pp, &kp P,arstneio , 0 3)
