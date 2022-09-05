@@ -684,7 +684,7 @@
             COMBOL(end, &kp END,arstneio nav num, 7 9)
             COMBOL(ribr, &kp RBKT,arstneio nav num, 1 7 8)
             COMBOL(lebr, &kp LBKT,arstneio nav num, 0 6 8)
-            COMBOL(play, &kp C_PLAY, media, 0 3)
+            COMBOL(play, &kp C_PP, media, 0 3)
             COMBOL(mute, &kp C_MUTE, media, 2 4)
             COMBOL(string_the, &string_the,arstneio, 3 4 5)
             COMBOL(string_there, &string_there,arstneio, 1 3 4 5)
