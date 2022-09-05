@@ -289,7 +289,7 @@
              ZMK_MACRO(string_plan,
               wait-ms = <10>;
               tap-ms = <1>;
-              bindings = <&kp P &kp L &kp E>;
+              bindings = <&kp P &kp L &kp A &kp N>;
               )
              ZMK_MACRO(string_the,
               wait-ms = <10>;
@@ -643,7 +643,7 @@
             };
 
             string_sim {
-               timeout-ms = <200>;
+               timeout-ms = <100>;
                key-positions = <2 4 6>;
                layers = <arstneio>;
                bindings = <&string_sim>;
@@ -751,7 +751,7 @@
             COMBOL(string_ready, &string_ready,arstneio, 1 2 3 4 6)
             COMBOL(string_individual, &string_individual,arstneio, 2 3 4 6)
             COMBOL(string_use, &string_use,arstneio, 2 5 6)
-            COMBOL(string_same, &string_same,arstneio, 0 2 4 6)
+            COMBOL(string_same, &string_same,arstneio, 0 2 4 5)
             COMBOL(string_has, &string_has,arstneio, 2 4 5)
             COMBOL(string_going, &string_going,arstneio, 3 4 6 7)
             COMBOL(string_was, &string_was,arstneio, 0 1 2)
