@@ -37,7 +37,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <800>;
-            bindings = <&sk LSHIFT>, <&kt LSHIFT>, <&mo num>;
+            bindings = <&sk LSHIFT>, <&mo num>, <&kt LSHIFT>;
         };
 
              ee: entoresc {
