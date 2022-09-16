@@ -171,10 +171,10 @@
               tap-ms = <1>;
               bindings = <&kp A &kp L &kp S &kp O>;
               )
-             ZMK_MACRO(string_earn,
+             ZMK_MACRO(string_here,
               wait-ms = <1>;
               tap-ms = <1>;
-              bindings = <&kp E &kp A &kp R &kp N>;
+              bindings = <&kp H &kp E &kp R &kp E>;
               )
              ZMK_MACRO(string_individual,
               wait-ms = <1>;
@@ -762,7 +762,7 @@
             COMBOL(string_when, &string_when,arstneio, 0 1 4)
             COMBOL(string_away, &string_away,arstneio, 0 1 4 6)
             COMBOLS(string_basically, &string_basically,arstneio, 0 6 7)
-            COMBOL(string_earn, &string_earn,arstneio, 1 4 5)
+            COMBOL(string_here, &string_here,arstneio, 1 4 5)
             COMBOL(string_ready, &string_ready,arstneio, 1 2 3 4 6)
             COMBOL(string_individual, &string_individual,arstneio, 2 3 4 6)
             COMBOL(string_use, &string_use,arstneio, 2 5 6)
