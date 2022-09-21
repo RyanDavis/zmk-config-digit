@@ -567,7 +567,8 @@
                timeout-ms = <100>;
                key-positions = <2 4>;
                layers = <nav>;
-               bindings = <&to media>;
+               bindings = <&tog media>;
+
             };
             combo_mediaarst {
                 timeout-ms = <100>;
