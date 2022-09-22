@@ -636,7 +636,7 @@
                bindings = <&kt LALT>;
             };
             combo_tab {
-               timeout-ms = <70>;
+               timeout-ms = <60>;
                key-positions = <2 3 8>;
                bindings = <&kp TAB>;
             };

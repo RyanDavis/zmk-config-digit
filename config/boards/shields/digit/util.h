@@ -6,7 +6,7 @@ combo_##name { \
 };
 #define COMBOS(name, keypress, keypos) \
 combo_##name { \
-  timeout-ms = <30>; \
+  timeout-ms = <50>; \
   bindings = <keypress>; \
   key-positions = <keypos>; \
 };
@@ -19,7 +19,7 @@ combo_##name { \
 };
 #define COMBOLS(name, keypress, mylayers, keypos) \
 combo_##name { \
-  timeout-ms = <30>; \
+  timeout-ms = <50>; \
   bindings = <keypress>; \
   layers = <mylayers>; \
   key-positions = <keypos>; \
