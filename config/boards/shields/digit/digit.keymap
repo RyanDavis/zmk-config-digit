@@ -27,7 +27,7 @@
             label = "holdtap";
             #binding-cells = <2>;
             tapping-term-ms = <800>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <250>;
             global-quick-tap;
             bindings = <&mo>, <&kp>;
             hold-trigger-key-positions = <4 5 6 7>;
@@ -660,10 +660,9 @@
                bindings = <&string_sim>;
             };
             combo_bspc {
-               timeout-ms = <120>;
+               timeout-ms = <150>;
                key-positions = <6 7>;
                bindings = <&kp BSPC>;
-               slow-release;
             };
             COMBOL(dt, &kp DOT,arstneio num, 1 6)
             COMBOLS(ww, &kp W,arstneio , 0 1)
