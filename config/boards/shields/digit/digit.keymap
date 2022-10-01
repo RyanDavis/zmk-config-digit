@@ -27,7 +27,7 @@
             label = "holdtap";
             #binding-cells = <2>;
             tapping-term-ms = <800>;
-            quick-tap-ms = <250>;
+            quick-tap-ms = <150>;
             global-quick-tap;
             bindings = <&mo>, <&kp>;
             hold-trigger-key-positions = <4 5 6 7>;
