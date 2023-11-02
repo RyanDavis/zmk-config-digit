@@ -58,12 +58,18 @@
              ZMK_MACRO(winright,
               wait-ms = <1>;
               tap-ms = <1>;
-              bindings =<&sk LGUI &sk LSHIFT &kp RIGHT>;
+              bindings =<&macro_press &kp LALT>,
+                        <&macro_tap &kp TAB>,
+                        <&macro_release &kp LALT>;
+
               )
              ZMK_MACRO(winleft,
               wait-ms = <1>;
               tap-ms = <1>;
-              bindings =<&sk LGUI &sk LSHIFT &kp LEFT>;
+              bindings =<&macro_press &kp LALT>,
+                        <&macro_tap &sk LSHIFT>,
+                        <&macro_tap &kp TAB>,
+                        <&macro_release &kp LALT>;
               )
              ZMK_MACRO(string_sim,
               wait-ms = <1>;
@@ -621,7 +627,7 @@
               combo_boot {
                timeout-ms = <100>;
                key-positions = <0 1 2 5 6 7>;
-               bindings = <&sys_reset>;
+               bindings = <&bootloader>;
             };
               combo_rst {
                timeout-ms = <100>;
