@@ -765,7 +765,6 @@
             COMBOL(string_had, &string_had,arstneio, 2 3 4 5)
             COMBOLL(string_print, &string_print,arstneio, 0 1 3 6)
             COMBOL(string_well, &string_well,arstneio nav num, 0 1 5)
-            COMBOLL(string_particle, &string_particle,arstneio, 0 1 3 4 7)
             COMBOL(string_just, &string_just,arstneio, 2 3 4)
             COMBOLL(string_those, &string_those,arstneio, 3 4 5 7)
             COMBOL(string_first, &string_first,arstneio, 1 2 6)
