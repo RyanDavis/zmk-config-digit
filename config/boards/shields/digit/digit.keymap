@@ -618,10 +618,15 @@
                key-positions = <0 7>;
                bindings = <&kp SEMICOLON>;
             };
+              combo_boot {
+               timeout-ms = <100>;
+               key-positions = <0 1 2 5 6 7>;
+               bindings = <&sys_reset>;
+            };
               combo_rst {
                timeout-ms = <100>;
-               key-positions = <0 1 2 3 4 5 6  7>;
-               bindings = <&reset>;
+               key-positions = <0 1 2 3 4 5 6 7>;
+               bindings = <&sys_reset>;
             };
               combo_ctrl_o {
                timeout-ms = <30>;
