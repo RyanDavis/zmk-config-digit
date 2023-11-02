@@ -26,7 +26,7 @@ combo_##name { \
 };
 #define COMBOL(name, keypress, mylayers, keypos) \
 combo_##name { \
-  timeout-ms = <55>; \
+  timeout-ms = <75>; \
   bindings = <keypress>; \
   layers = <mylayers>; \
   key-positions = <keypos>; \

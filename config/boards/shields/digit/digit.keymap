@@ -55,6 +55,16 @@
             tapping-term-ms = <500>;
             bindings = <&sk LCTRL>, <&kt LCTRL>;
         };
+             ZMK_MACRO(winright,
+              wait-ms = <1>;
+              tap-ms = <1>;
+              bindings =<&kp LGUI &kp LSHIFT &kp RIGHT>;
+              )
+             ZMK_MACRO(winleft,
+              wait-ms = <1>;
+              tap-ms = <1>;
+              bindings =<&kp LGUI &kp LSHIFT &kp LEFT>;
+              )
              ZMK_MACRO(string_sim,
               wait-ms = <1>;
               tap-ms = <1>;
@@ -598,6 +608,11 @@
                key-positions = <0 3 8>;
                bindings = <&sk LALT>;
             };
+             combo_alttog {
+               timeout-ms = <100>;
+               key-positions = <0 3 8 9>;
+               bindings = <&kt LALT>;
+            };
              combo_back {
                timeout-ms = <100>;
                key-positions = <0 7>;
@@ -623,6 +638,11 @@
                key-positions = <1 3 8>;
                bindings = <&sk LCTRL>;
             };
+            combo_ctrltog {
+               timeout-ms = <200>;
+               key-positions = <1 3 8 9>;
+               bindings = <&kt LCTRL>;
+            };
             combo_lctrl {
                timeout-ms = <100>;
                key-positions =<1 3>;
@@ -640,10 +660,20 @@
                key-positions = <2 3 8>;
                bindings = <&kp TAB>;
             };
+            combo_tabtog {
+               timeout-ms = <60>;
+               key-positions = <2 3 8 9>;
+               bindings = <&kt TAB>;
+            };
             combo_win {
                timeout-ms = <40>;
                key-positions = <0 1 8>;
                bindings = <&kp LGUI>;
+            };
+            combo_wintog {
+               timeout-ms = <40>;
+               key-positions = <0 1 8 9>;
+               bindings = <&kt LGUI>;
             };
             combo_comma {
                timeout-ms = <60>;
@@ -788,5 +818,7 @@
             COMBOS(combo_ctrlC, &kp LC(C), 2 8)
             COMBOS(combo_ctrlV, &kp LC(V), 3 8)
             COMBOS(combo_ctrlS, &kp LC(S), 1 2 3 8)
+            COMBOS(winleft, &winleft, 0 8)
+            COMBOS(winright, &winright, 1 8)
     };
      };
