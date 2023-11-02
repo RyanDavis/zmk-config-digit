@@ -58,12 +58,12 @@
              ZMK_MACRO(winright,
               wait-ms = <1>;
               tap-ms = <1>;
-              bindings =<&kp LGUI &kp LSHIFT &kp RIGHT>;
+              bindings =<&sk LGUI &sk LSHIFT &kp RIGHT>;
               )
              ZMK_MACRO(winleft,
               wait-ms = <1>;
               tap-ms = <1>;
-              bindings =<&kp LGUI &kp LSHIFT &kp LEFT>;
+              bindings =<&sk LGUI &sk LSHIFT &kp LEFT>;
               )
              ZMK_MACRO(string_sim,
               wait-ms = <1>;
