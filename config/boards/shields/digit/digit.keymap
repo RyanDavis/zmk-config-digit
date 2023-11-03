@@ -36,8 +36,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&sk LSHIFT>, <&mo num>, <&kt LSHIFT>;
+            tapping-term-ms = <200>;
+            bindings = <&sk LSHIFT>, <&mo num>;
         };
 
              ee: entoresc {
