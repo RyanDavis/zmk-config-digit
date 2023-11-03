@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <250>;
             bindings = <&sk LSHIFT>, <&mo num>, <&kt LSHIFT>;
         };
 
@@ -48,6 +48,13 @@
             mods = <(MOD_LSFT)>;
         };
 
+             htal: torhalt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&sk LALT>, <&kt LALT>;
+        };
              htct: torhctrl {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_2";
@@ -612,7 +619,7 @@
              combo_alt {
                timeout-ms = <100>;
                key-positions = <0 3 8>;
-               bindings = <&sk LALT>;
+               bindings = <&htal>;
             };
              combo_alttog {
                timeout-ms = <100>;
