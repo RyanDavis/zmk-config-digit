@@ -12,7 +12,7 @@ combo_##name { \
 };
 #define COMBOLL(name, keypress, mylayers, keypos) \
 combo_##name { \
-  timeout-ms = <85>; \
+  timeout-ms = <100>; \
   bindings = <keypress>; \
   layers = <mylayers>; \
   key-positions = <keypos>; \
