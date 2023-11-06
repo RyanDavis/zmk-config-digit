@@ -729,7 +729,7 @@
             COMBOLS(minus, &kp MINUS,arstneio nav num, 2 6)
             COMBOLS(apos, &kp APOS,arstneio nav num, 2 7)
             COMBOL(bb, &mt N9 B,arstneio , 3 4)
-            COMBOL(grv, &kp GRAVE,nav ,2 7)
+            COMBOL(grv, &kp LS(gresc),nav ,2 7)
 
             COMBOL(nu9, &mt F9 N9,num, 3 4)
             COMBOL(vv, &mt N0 V,arstneio , 3 5)
