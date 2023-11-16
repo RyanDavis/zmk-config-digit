@@ -661,12 +661,6 @@
                key-positions = <1 3 8 9>;
                bindings = <&kt LCTRL>;
             };
-            # combo_lctrl {
-            #    timeout-ms = <100>;
-            #    key-positions =<1 3>;
-            #    layers =<nav>;
-            #    bindings = <&kt LCTRL>;
-            # };
             combo_lalt {
                timeout-ms = <50>;
                key-positions = <0 3>;
