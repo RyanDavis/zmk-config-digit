@@ -542,7 +542,7 @@
             };
             nav {
             bindings = <
-            &none &none &none &none &kp LEFT &kp UP &kp DOWN &kp RIGHT
+            &kp BSPC &none &none &none &kp LEFT &kp UP &kp DOWN &kp RIGHT
                                &trans &trans
             >;
             };
@@ -668,7 +668,7 @@
                bindings = <&kt LALT>;
             };
             combo_tab {
-               timeout-ms = <40>;
+               timeout-ms = <30>;
                key-positions = <2 3 8>;
                bindings = <&kp TAB>;
             };
@@ -732,7 +732,7 @@
             COMBOL(quest, &mt EQUAL QMARK,arstneio nav num, 3 7)
             COMBOLS(hh, &mt NON_US_HASH H,arstneio , 4 5)
             COMBOL(yy, &kp Y,arstneio , 4 6)
-            COMBOLL(ll, &kp L,arstneio , 4 7)
+            COMBOL(ll, &kp L,arstneio , 4 7)
             COMBOLS(uu, &kp U,arstneio , 5 6)
             COMBOL(exc, &kp EXCL,arstneio num, 5 7)
             COMBOLL(slash, &kp SLASH,arstneio num, 2 4 7)
@@ -829,7 +829,5 @@
             COMBOS(combo_ctrlC, &kp LC(C), 2 8)
             COMBOS(combo_ctrlV, &kp LC(V), 3 8)
             COMBOS(combo_ctrlS, &kp LC(S), 1 2 3 8)
-            COMBOS(winleft, &winleft, 0 8)
-            COMBOS(winright, &winright, 1 8)
     };
      };
