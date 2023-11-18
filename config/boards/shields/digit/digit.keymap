@@ -553,7 +553,7 @@
              arstneio {
              bindings = <
              &mt N1 A &mt N2 R &mt N3 S  &mt N4 T  &mt N5 N &mt N6 E  &mt N7 I  &mt N8 O
-                                &lt space_num SPACE &sk LSHIFT
+                                &mt space_num  SPACE &sk LSHIFT
              >;
              };
              num {
