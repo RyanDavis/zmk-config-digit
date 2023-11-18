@@ -5,13 +5,13 @@
 #include <dt-bindings/zmk/outputs.h>
 &lt {
     tapping-term-ms = <250>;
-    quick-tap-ms = <100>;
-    flavor = "tap-unless-interrupted";
+    quick-tap-ms = <150>;
+    flavor = "tap-preferred";
     require-prior-idle-ms = <60>;
     };
 &mt {
-    tapping-term-ms = <200>;
-    flavor = "tap-unless-interrupted";
+    tapping-term-ms = <100>;
+    flavor = "tap-preferred";
     };
 &sk {
     release-after-ms = <10000>;
@@ -710,7 +710,7 @@
             };
             COMBOL(dt, &kp DOT,arstneio num, 1 6)
             COMBOLS(ww, &kp W,arstneio , 0 1)
-            COMBOL(navtnum, &to num, nav, 4 5)
+            COMBOL(navtnum, &tog num, nav, 4 5)
             COMBOL(xx, &kp X,arstneio , 0 2)
             COMBOLS(pp, &kp P,arstneio , 0 3)
             COMBOL(jj, &kp J,arstneio , 0 4)
