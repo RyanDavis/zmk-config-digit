@@ -87,6 +87,16 @@
               tap-ms = <1>;
               bindings =<&kp S &kp I &kp M &kp U &kp L &kp A &kp T &kp I &kp O &kp N>;
               )
+             ZMK_MACRO(space_num,
+             wait-ms = <1>;
+             tap-ms = <1>;
+             bindings
+             = <&macro_press &mo nav>
+             , <&macro_pause_for_release>
+             , <&macro_release &mo nav>
+             , <&macro_tap &tog arstneio>
+             ;
+             )
              ZMK_MACRO(string_what,
               wait-ms = <1>;
               tap-ms = <1>;
@@ -543,7 +553,7 @@
              arstneio {
              bindings = <
              &mt N1 A &mt N2 R &mt N3 S  &mt N4 T  &mt N5 N &mt N6 E  &mt N7 I  &mt N8 O
-                                &lt nav SPACE &sk LSHIFT
+                                &lt space_num SPACE &sk LSHIFT
              >;
              };
              num {
@@ -727,8 +737,7 @@
             COMBOL(dt, &kp DOT,arstneio num, 1 6)
             COMBOLS(ww, &kp W,arstneio , 0 1)
             COMBOL(navtnum, &to num, nav, 4 5)
-            COMBOL(tmptoarst, &to arstneio, tmp, 4 5)
-
+            COMBOL(tmptoarst, &to arstneio, num, 4 5)
             COMBOL(xx, &kp X,arstneio , 0 2)
             COMBOLS(pp, &kp P,arstneio , 0 3)
             COMBOL(jj, &kp J,arstneio , 0 4)
