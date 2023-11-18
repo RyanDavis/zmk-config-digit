@@ -21,7 +21,6 @@
 #define nav 2
 #define media 3
 #define blt 4
-#define tmp 5
 
 / {
      behaviors {
@@ -40,7 +39,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&sk LSHIFT>, <&mo num>;
         };
 
@@ -87,16 +86,6 @@
               tap-ms = <1>;
               bindings =<&kp S &kp I &kp M &kp U &kp L &kp A &kp T &kp I &kp O &kp N>;
               )
-             ZMK_MACRO(space_num,
-             wait-ms = <1>;
-             tap-ms = <1>;
-             bindings
-             = <&macro_press &mo nav>
-             , <&macro_pause_for_release>
-             , <&macro_release &mo nav>
-             , <&macro_tap &tog arstneio>
-             ;
-             )
              ZMK_MACRO(string_what,
               wait-ms = <1>;
               tap-ms = <1>;
@@ -553,7 +542,7 @@
              arstneio {
              bindings = <
              &mt N1 A &mt N2 R &mt N3 S  &mt N4 T  &mt N5 N &mt N6 E  &mt N7 I  &mt N8 O
-                                &mt space_num  SPACE &sk LSHIFT
+                                &lt nav SPACE &sc
              >;
              };
              num {
@@ -578,12 +567,6 @@
             bindings = <
             &out OUT_TOG &out OUT_USB &out OUT_BLE &none &bt BT_PRV &none &none &bt BT_NXT
                               &none &none
-            >;
-            };
-            tmp {
-            bindings = <
-            &mt F1 N1 &mt F2 N2 &mt F3 N3 &mt F4 N4 &mt F5 N5 &mt F6 N6 &mt F7 N7 &mt F8 N8
-                                   &trans &trans
             >;
             };
      };
@@ -736,8 +719,6 @@
             };
             COMBOL(dt, &kp DOT,arstneio num, 1 6)
             COMBOLS(ww, &kp W,arstneio , 0 1)
-            COMBOL(navtnum, &to num, nav, 4 5)
-            COMBOL(tmptoarst, &to arstneio, num, 4 5)
             COMBOL(xx, &kp X,arstneio , 0 2)
             COMBOLS(pp, &kp P,arstneio , 0 3)
             COMBOL(jj, &kp J,arstneio , 0 4)
@@ -755,9 +736,9 @@
             COMBOLS(bb, &mt N9 B,arstneio , 3 4)
             COMBOL(gesc, &gresc,nav ,2 5)
 
-            COMBOL(nu9, &mt F9 N9,num tmp, 3 4)
+            COMBOL(nu9, &mt F9 N9,num, 3 4)
             COMBOLS(vv, &mt N0 V,arstneio , 3 5)
-            COMBOL(nten, &mt F10 N0,num tmp, 3 5)
+            COMBOL(nten, &mt F10 N0,num, 3 5)
             COMBOLS(gg, &kp G,arstneio, 3 6)
             COMBOL(quest, &mt EQUAL QMARK,arstneio nav num, 3 7)
             COMBOLS(hh, &mt NON_US_HASH H,arstneio , 4 5)
