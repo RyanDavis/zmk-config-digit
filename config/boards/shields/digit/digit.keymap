@@ -10,7 +10,7 @@
     require-prior-idle-ms = <60>;
     };
 &mt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <250>;
     flavor = "tap-preferred";
     };
 &sk {
