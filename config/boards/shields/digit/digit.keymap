@@ -572,6 +572,7 @@
             >;
             };
             tmp {
+            bindings = <
             &mt F1 N1 &mt F2 N2 &mt F3 N3 &mt F4 N4 &mt F5 N5 &mt F6 N6 &mt F7 N7 &mt F8 N8
                                    &trans &trans
             >;
