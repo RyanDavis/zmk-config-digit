@@ -10,7 +10,7 @@
     require-prior-idle-ms = <60>;
     };
 &mt {
-    tapping-term-ms = <250>;
+    tapping-term-ms = <200>;
     flavor = "tap-preferred";
     };
 &sk {
@@ -27,8 +27,8 @@
   conditional_layers {
     compatible = "zmk,conditional_layers";
     num_layer {
-      if-layers = <nav,tmp>;
-      then-layer = <num>;
+      if-layers = <2,5>;
+      then-layer = <1>;
     };
   };
 };
