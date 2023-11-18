@@ -24,15 +24,6 @@
 #define tmp 5
 
 / {
-  conditional_layers {
-    compatible = "zmk,conditional_layers";
-    num_layer {
-      if-layers = <2 1>;
-      then-layer = <5>;
-    };
-  };
-};
-/ {
      behaviors {
              snv: spaceornav {
             compatible = "zmk,behavior-hold-tap";
@@ -75,6 +66,14 @@
             tapping-term-ms = <500>;
             bindings = <&sk LCTRL>, <&kt LCTRL>;
         };
+      conditional_layers {
+        compatible = "zmk,conditional_layers";
+        tmp {
+          if-layers = <2 1>;
+          then-layer = <5>;
+        };
+      };
+    };
              ZMK_MACRO(winright,
               wait-ms = <1>;
               tap-ms = <1>;
