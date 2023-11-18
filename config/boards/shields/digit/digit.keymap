@@ -21,6 +21,17 @@
 #define nav 2
 #define media 3
 #define blt 4
+#define tmp 5
+
+/ {
+  conditional_layers {
+    compatible = "zmk,conditional_layers";
+    num_layer {
+      if-layers = <nav,tmp>;
+      then-layer = <num>;
+    };
+  };
+};
 / {
      behaviors {
              snv: spaceornav {
@@ -560,6 +571,13 @@
                               &none &none
             >;
             };
+            tmp {
+              bindings = <
+              &none &none &none &none &none &none &none  &none 
+                              &none &none
+
+            }
+            >;
      };
 
     combos {
@@ -711,6 +729,7 @@
             COMBOL(dt, &kp DOT,arstneio num, 1 6)
             COMBOLS(ww, &kp W,arstneio , 0 1)
             COMBOL(navtnum, &tog num, nav, 4 5)
+            COMBOL(numtnav, &tog num, nav, 4 5)
             COMBOL(xx, &kp X,arstneio , 0 2)
             COMBOLS(pp, &kp P,arstneio , 0 3)
             COMBOL(jj, &kp J,arstneio , 0 4)
