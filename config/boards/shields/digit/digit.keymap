@@ -542,7 +542,7 @@
              arstneio {
              bindings = <
              &mt N1 A &mt N2 R &mt N3 S  &mt N4 T  &mt N5 N &mt N6 E  &mt N7 I  &mt N8 O
-                                &lt nav SPACE &sc
+                                &lt nav SPACE &sk LSHFT
              >;
              };
              num {
@@ -712,6 +712,12 @@
                layers = <arstneio>;
                bindings = <&string_sim>;
             };
+            combo_tempnum {
+              timeout-ms = <100>;
+              key-positions = <0 1 2 3 8>;
+              slow-release;
+              bindings = <&mo num>;
+            };
             combo_bspc {
                timeout-ms = <50>;
                key-positions = <6 7>;
@@ -735,7 +741,6 @@
             COMBOLS(apos, &kp APOS,arstneio nav num, 2 7)
             COMBOLS(bb, &mt N9 B,arstneio , 3 4)
             COMBOL(gesc, &gresc,nav ,2 5)
-
             COMBOL(nu9, &mt F9 N9,num, 3 4)
             COMBOLS(vv, &mt N0 V,arstneio , 3 5)
             COMBOL(nten, &mt F10 N0,num, 3 5)
